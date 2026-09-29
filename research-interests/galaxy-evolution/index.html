@@ -213,7 +213,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.74de165c63c5bcc77656e87edc92e04b.css" />
+  <link rel="stylesheet" href="/css/wowchemy.1e899a3846d08a22e556ab1626b2faa8.css" />
 
   
   
@@ -841,7 +841,16 @@
 <p>The modelling spans star formation and feedback, bulge growth, mergers and disc instabilities, galaxy sizes, and black-hole growth. Model parameters are constrained using statistical inference and large-scale calibration, allowing the resulting galaxy populations to be tested against stellar mass functions, quenched fractions, luminosity functions, galaxy sizes, surface densities, and other scaling relations.</p>
 <h2 id="interactive-galaxy-cluster-formation-visualisation">Interactive galaxy cluster formation visualisation</h2>
 <figure>
-<iframe src="/visualizations/halo.html" title="Interactive halo visualization" loading="lazy" style="display:block; width:100%; height:560px; border:0;" allowfullscreen></iframe>
+<div class="interactive-explorer" data-explorer>
+  <button type="button" class="explorer-preview" data-explorer-load aria-label="Load Interactive halo visualization">
+    <img src="/media/previews/halo_hu_418ff696b5dddb70.webp" width="960" height="600" alt="Preview of Interactive halo visualization" loading="lazy">
+    <span class="explorer-preview-action"><span aria-hidden="true">&#9654;</span> Explore interactively</span>
+  </button>
+  <p class="explorer-loading" role="status" hidden>Loading interactive explorer…</p>
+  <iframe class="halo-explorer-embed" data-explorer-src="/visualizations/halo.html" title="Interactive halo visualization" style="width:100%; height:560px; border:0; border-radius:12px;" hidden allowfullscreen></iframe>
+  <noscript><p><a href="/visualizations/halo.html" target="_blank" rel="noopener noreferrer">Open the interactive explorer in a new tab</a>.</p></noscript>
+</div><script src="/js/interactive-explorer.min.b83aef6968af832a6a47fc1d9a50a841fc35d778f99d364f948bb365831066ec.js" integrity="sha256-uDrvaWivgypqR/wdmlCoQfw113j5nTZPlIuzZYMQZuw=" defer></script>
+
 <figcaption>Explore the formation of a massive galaxy cluster within a 20 Mpc region across cosmic time. Rotate and zoom through the environment, move through different epochs, and compare star-forming and quenched galaxies. Marker size traces galaxy stellar mass, while hovering reveals additional galaxy properties. Based on <a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract" target="_blank" rel="noopener">Vani et al. 2025</a>.</figcaption>
 </figure>
 <p><a href="/visualizations/halo.html" target="_blank" rel="noopener noreferrer">Open visualization in a new tab</a></p>
