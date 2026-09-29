@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research-Interests | Akash Vani</title>
+    <link>https://a-vani.github.io/research-interests/</link>
+      <atom:link href="https://a-vani.github.io/research-interests/index.xml" rel="self" type="application/rss+xml" />
+    <description>Research-Interests</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-US</language><copyright>© Akash Vani 2021-2026</copyright>
+    <image>
+      <url>https://a-vani.github.io/media/icon_hu_b556fe0fe2fec2e7.png</url>
+      <title>Research-Interests</title>
+      <link>https://a-vani.github.io/research-interests/</link>
+    </image>
+    
+    <item>
+      <title>Galaxy Evolution &amp; Quenching</title>
+      <link>https://a-vani.github.io/research-interests/galaxy-evolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/galaxy-evolution/</guid>
+      <description>&lt;p&gt;Galaxies evolve through the interplay of gas accretion, star formation, mergers, structural transformation, and feedback. Together, these processes determine how galaxies build their stellar mass, regulate their gas supply, and transition from actively star-forming to quiescent systems.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-investigate&#34;&gt;What I investigate&lt;/h2&gt;
+&lt;p&gt;My research follows galaxy evolution from the nearby Universe to the first billion years of cosmic history, with a particular focus on how massive galaxies assemble, develop compact structures, and eventually quench their star formation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2025&lt;/a&gt; tested three generations of &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt; against observations from z=0 to z≈10, examining galaxy abundances, star-formation rates, sizes, and stellar-mass surface densities. The models reproduce many global trends, but struggle to produce enough massive, compact quenched galaxies at high redshift.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt; builds on these results by developing and testing an updated &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt; framework within Gadget-4, with revised physical prescriptions aimed at improving the modelling of early galaxy growth and quenching. The model introduces surface-density-dependent star formation and stellar feedback, dissipative galaxy mergers, and gas- and stellar-based disc instabilities, extending the framework to remain consistent with key observational constraints out to z≈14. The work also develops new calibration methods to efficiently constrain the expanded model.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-l-galaxies-framework-physical-processes-shaping-galaxy-formation-and-evolution-based-on-vani-et-al-2026httpsuiadsabsharvardeduabsarxiv260912060&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Schematic of the L-Galaxies galaxy formation and evolution model.&#34; srcset=&#34;
+               /media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp 400w,
+               /media/LGalSchematic_hu_179958cf1e490df2.webp 760w,
+               /media/LGalSchematic_hu_b1f9f99e3ad41d6a.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;595&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The L-Galaxies framework: physical processes shaping galaxy formation and evolution. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt;.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;my-approach&#34;&gt;My approach&lt;/h2&gt;
+&lt;p&gt;I develop and test physically motivated prescriptions within &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt;, combining large cosmological simulations with observational constraints from HST, JWST, and ALMA, as well as current and upcoming large surveys including Euclid and Roman.&lt;/p&gt;
+&lt;p&gt;The modelling spans star formation and feedback, bulge growth, mergers and disc instabilities, galaxy sizes, and black-hole growth. Model parameters are constrained using statistical inference and large-scale calibration, allowing the resulting galaxy populations to be tested against stellar mass functions, quenched fractions, luminosity functions, galaxy sizes, surface densities, and other scaling relations.&lt;/p&gt;
+&lt;h2 id=&#34;interactive-galaxy-cluster-formation-visualisation&#34;&gt;Interactive galaxy cluster formation visualisation&lt;/h2&gt;
+&lt;figure&gt;
+&lt;iframe src=&#34;https://a-vani.github.io/visualizations/halo.html&#34; title=&#34;Interactive halo visualization&#34; loading=&#34;lazy&#34; style=&#34;display:block; width:100%; height:560px; border:0;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Explore the formation of a massive galaxy cluster within a 20 Mpc region across cosmic time. Rotate and zoom through the environment, move through different epochs, and compare star-forming and quenched galaxies. Marker size traces galaxy stellar mass, while hovering reveals additional galaxy properties. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2025&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://a-vani.github.io/visualizations/halo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Open visualization in a new tab&lt;/a&gt;&lt;/p&gt;
+
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/#research-interests&#34;&gt;&amp;larr; Back to Research Interests&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/early-universe/&#34;&gt;The Early Universe &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local Stellar Populations &amp; the Milky Way</title>
+      <link>https://a-vani.github.io/research-interests/local-stellar-populations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/local-stellar-populations/</guid>
+      <description>&lt;p&gt;The solar neighbourhood provides one of the most detailed laboratories for Galactic archaeology. Nearby stars preserve information about the formation, structure, and star-formation history of the Milky Way, while precise astrometry and photometry from Gaia make it possible to connect these populations directly to physical models of our Galaxy.&lt;/p&gt;
+&lt;p&gt;My interest in stellar populations and Galactic evolution grew out of my research at Heidelberg University, combining population synthesis, nearby-star catalogues, and white-dwarf studies to investigate the history of the Milky Way.&lt;/p&gt;
+&lt;h2 id=&#34;population-synthesis-and-galactic-archaeology&#34;&gt;Population synthesis and Galactic archaeology&lt;/h2&gt;
+&lt;p&gt;During my Master&amp;rsquo;s research, I worked on the JJ model, a semi-analytic chemo-dynamical model of the Galactic disc. This work extended the model&amp;rsquo;s population synthesis to white dwarfs and compared the predicted local population with Gaia observations.&lt;/p&gt;
+&lt;p&gt;This research has since developed into CALOMERA (Sysoliatina &amp;amp; Vani 2026), a successor to the JJ framework that extends population synthesis across a broader range of stellar populations and evolutionary stages, including main-sequence stars, white dwarfs, and brown dwarfs. By combining these complementary populations, CALOMERA aims to place stronger constraints on the star-formation and evolutionary history of the Milky Way. The framework can also be used to estimate contamination by brown dwarfs in deep JWST fields.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; style=&#34;max-width: 480px&#34;&gt;&lt;img alt=&#34;Illustration of the CALOMERA Milky Way population-synthesis framework.&#34; srcset=&#34;
+               /media/Calomera_website_hu_4606a0ad806f112.webp 400w,
+               /media/Calomera_website_hu_cc8a43f93d367bcd.webp 760w,
+               /media/Calomera_website_hu_42be12c018aa9160.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/Calomera_website_hu_4606a0ad806f112.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;340&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;the-nearby-stellar-census&#34;&gt;The nearby stellar census&lt;/h2&gt;
+&lt;p&gt;The Catalogue of Nearby Stars provides a complementary observational view of the solar neighbourhood. &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2023&lt;/a&gt; in &lt;a href=&#34;https://dc.g-vo.org/CNS5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CNS5&lt;/a&gt; updated the census of stars and brown dwarfs within 25 pc using Gaia and complementary data, with improved completeness, validation, and source characterisation.&lt;/p&gt;
+&lt;p&gt;Follow-up work, &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2024A%26A...683A..33G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2024&lt;/a&gt;,  identified previously missed nearby white dwarfs and improved the local white-dwarf census. The ongoing sixth iteration, Golovin et al. 2026 i.e. CNS6, extends the catalogue further by incorporating more comprehensive physical properties and updated characterisation of nearby objects.&lt;/p&gt;
+&lt;h2 id=&#34;explore-the-solar-neighbourhood&#34;&gt;Explore the solar neighbourhood&lt;/h2&gt;
+&lt;figure style=&#34;width:100%; max-width:680px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;iframe class=&#34;solar-neighbourhood-embed&#34; src=&#34;https://a-vani.github.io/media/solar_neighbourhood.html&#34; title=&#34;Interactive CNS5 solar neighbourhood explorer&#34; loading=&#34;lazy&#34; style=&#34;display:block; width:100%; height:800px; border:0; border-radius:12px;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Interactive explorer of our stellar neighbourhood based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2023&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;For the best experience, &lt;a href=&#34;https://a-vani.github.io/media/solar_neighbourhood.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;open the explorer in full view in a new tab&lt;/a&gt;.&lt;/p&gt;&lt;script src=&#34;https://a-vani.github.io/js/solar-neighbourhood-embed.min.bac5692570245300224efba605392bceef82c9197642a9bcd8e11b800bc82b76.js&#34; integrity=&#34;sha256-usVpJXAkUwAiTvumBTkrzu&amp;#43;CyRl2Qqm82OEbgAvIK3Y=&#34; defer&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;connecting-models-and-observations&#34;&gt;Connecting models and observations&lt;/h2&gt;
+&lt;p&gt;Together, population synthesis and the nearby stellar census provide complementary ways to reconstruct the Milky Way&amp;rsquo;s history. The models connect assumptions about star formation, stellar evolution, and Galactic structure to observable stellar populations, while volume-limited catalogues provide the data needed to test those predictions.&lt;/p&gt;
+&lt;p&gt;This combination provides a framework for Galactic archaeology across main-sequence stars, white dwarfs, brown dwarfs, and the local stellar population as a whole.&lt;/p&gt;
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;&amp;larr; Simulations &amp; ML&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/#research-interests&#34;&gt;Back to Research Interests &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Numerical Simulations &amp; Machine Learning</title>
+      <link>https://a-vani.github.io/research-interests/numerical-simulations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/numerical-simulations/</guid>
+      <description>&lt;p&gt;Numerical simulations provide the backbone for modelling how cosmic structure grows and how galaxies evolve within it. My work uses large cosmological dark-matter simulations, including the Millennium and MillenniumTNG simulation suites, together with the &lt;a href=&#34;https://wwwmpa.mpa-garching.mpg.de/gadget4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gadget-4&lt;/a&gt; framework to connect the evolving dark-matter distribution with physically motivated models of galaxy formation.&lt;/p&gt;
+&lt;h2 id=&#34;my-approach&#34;&gt;My approach&lt;/h2&gt;
+&lt;p&gt;I combine large-scale N-body simulations with semi-analytic models of galaxy formation. The dark-matter simulations follow the growth of haloes and large-scale structure, while &lt;a href=&#34;https://a-vani.github.io/research-interests/galaxy-evolution/&#34;&gt;L-Galaxies&lt;/a&gt; models the baryonic processes associated with galaxy formation and evolution along the resulting merger trees.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-l-galaxies-framework-physical-processes-shaping-galaxy-formation-and-evolution-based-on-vani-et-al-2026httpsuiadsabsharvardeduabsarxiv260912060&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Schematic of the L-Galaxies galaxy formation and evolution model.&#34; srcset=&#34;
+               /media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp 400w,
+               /media/LGalSchematic_hu_179958cf1e490df2.webp 760w,
+               /media/LGalSchematic_hu_b1f9f99e3ad41d6a.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;595&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The L-Galaxies framework: physical processes shaping galaxy formation and evolution. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt;.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;My work focuses on developing, implementing, and testing self-consistent physical prescriptions within the Gadget-4 + L-Galaxies framework. These include star formation and stellar feedback, mergers, disc instabilities, black-hole growth, and galaxy quenching.&lt;/p&gt;
+&lt;p&gt;Scientific and high-performance computing are central to this work. I use Python and C/C++ to develop and analyse simulation workflows, process multi-dimensional and multi-terabyte datasets, and explore galaxy populations across large parameter spaces.&lt;/p&gt;
+&lt;p&gt;The same modelling philosophy also extends to stellar-population work through CALOMERA, a semi-analytic chemo-dynamical Milky Way model for population synthesis and Galactic evolution studies. More details are available on the &lt;a href=&#34;https://a-vani.github.io/research-interests/local-stellar-populations/&#34;&gt;Local Stellar Populations &amp;amp; the Milky Way&lt;/a&gt; page.&lt;/p&gt;
+&lt;h2 id=&#34;statistical-inference-and-machine-learning&#34;&gt;Statistical inference and machine learning&lt;/h2&gt;
+&lt;p&gt;A major part of the modelling process is identifying which combinations of physical parameters are consistent with observations. I use statistical inference, MCMC-based calibration, and machine-learning approaches to constrain model parameters and explore parameter space efficiently.&lt;/p&gt;
+&lt;p&gt;Deep-learning surrogate models can emulate computationally expensive model outputs, accelerating calibration and enabling a much broader exploration of physical parameter space than would be feasible with direct model evaluations alone.&lt;/p&gt;
+&lt;h2 id=&#34;connecting-models-and-observations&#34;&gt;Connecting models and observations&lt;/h2&gt;
+&lt;p&gt;The resulting predictions are tested against observational constraints including galaxy abundances, star-formation rates, quenched fractions, luminosity functions, galaxy sizes, and structural properties.&lt;/p&gt;
+&lt;p&gt;This combination of physical modelling, large-scale N-body simulations, scientific computing, statistical inference, and machine learning provides a framework for identifying where current models succeed, where they fail, and which physical ingredients require further development.&lt;/p&gt;
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/early-universe/&#34;&gt;&amp;larr; The Early Universe&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/local-stellar-populations/&#34;&gt;Population Synthesis &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Early Universe</title>
+      <link>https://a-vani.github.io/research-interests/early-universe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/early-universe/</guid>
+      <description>&lt;p&gt;The early Universe provides one of the most demanding tests of galaxy-formation models. Galaxies had only a short time to assemble their stellar mass, build structure, and regulate their star formation, making their observed properties especially sensitive to the underlying physical processes.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-jades-gs-z14-0httpsenwikipediaorgwikijades-gs-z14-0-one-of-the-most-distant-galaxies-discovered-credit-nasa&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; style=&#34;max-width: 50%&#34;&gt;&lt;img alt=&#34;NASA image of the distant galaxy JADES-GS-z14-0.&#34; srcset=&#34;
+               /media/JADES-GS-z14-0_NASA_hu_b2a7aff1ee5ebf19.webp 400w,
+               /media/JADES-GS-z14-0_NASA_hu_e4f420fd6f222574.webp 760w,
+               /media/JADES-GS-z14-0_NASA_hu_5737d08ba21e66a3.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/JADES-GS-z14-0_NASA_hu_b2a7aff1ee5ebf19.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;742&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;a href=&#34;https://en.wikipedia.org/wiki/JADES-GS-z14-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JADES-GS-z14-0&lt;/a&gt;, one of the most distant galaxies discovered. Credit: NASA.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;what-i-investigate&#34;&gt;What I investigate&lt;/h2&gt;
+&lt;p&gt;My research explores galaxy growth and quenching at high and ultra-high redshift, with a particular focus on the first billion years of cosmic history. Key questions include how galaxies assemble stellar mass so rapidly, what regulates their star formation, and how some systems become compact or quiescent at such early times.&lt;/p&gt;
+&lt;p&gt;A central goal is to test whether physically motivated galaxy-formation models can reproduce the rapidly evolving populations revealed by JWST and other deep surveys, while remaining consistent with galaxy evolution at later epochs.&lt;/p&gt;
+&lt;h2 id=&#34;what-we-find&#34;&gt;What we find&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2025&lt;/a&gt; showed that earlier L-Galaxies models reproduce many global galaxy trends out to z ≈10, but exhibit three key shortcomings at high redshift: they underpredict the abundance of massive galaxies, produce too few massive quenched galaxies, and predict quenched systems that are too extended.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt; substantially reduces these tensions. The updated model increases the abundance of massive and UV-bright galaxies at z ≥ 9, produces significantly more massive quenched systems at z ≈ 3–8, and forms compact galaxies consistent with observed UV sizes at z ≈ 10–13.&lt;/p&gt;
+&lt;h2 id=&#34;my-approach&#34;&gt;My approach&lt;/h2&gt;
+&lt;p&gt;Within &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt;, I develop and test models in which star formation and stellar feedback depend on the local gas surface density. The framework also includes dissipative mergers and gas- and stellar-disc instabilities, allowing rapid early growth and structural evolution to be followed self-consistently.&lt;/p&gt;
+&lt;p&gt;Model predictions are compared with high-redshift observations from JWST, including ultraviolet luminosity functions, stellar mass functions, star-formation rates, galaxy sizes, and quenched galaxy abundances.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-predicted-ultraviolet-luminosity-function-at-z--11-compared-with-observational-constraints-based-on-vani-et-al-2026httpsuiadsabsharvardeduabsarxiv260912060&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; style=&#34;max-width: 50%&#34;&gt;&lt;img alt=&#34;High-redshift ultraviolet luminosity function at approximately z = 11. Based on [Vani et al. 2026](https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060).&#34; srcset=&#34;
+               /media/UVLF_G411.0_hu_555215f2dfaaddfb.webp 400w,
+               /media/UVLF_G411.0_hu_320a3abe3e0e92df.webp 760w,
+               /media/UVLF_G411.0_hu_1f58ca47eaecf0ae.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/UVLF_G411.0_hu_555215f2dfaaddfb.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;605&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Predicted ultraviolet luminosity function at z ≈ 11 compared with observational constraints. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt;.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/galaxy-evolution/&#34;&gt;&amp;larr; Galaxy Evolution&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;Simulations &amp; ML &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,21 +5,27 @@
     <link>https://a-vani.github.io/</link>
       <atom:link href="https://a-vani.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Akash Vani</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Akash Vani 2021-2023</copyright><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-US</language><copyright>© Akash Vani 2021-2026</copyright><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://a-vani.github.io/media/icon_huc8ba58f447d735814d2e3ba3020aeaf2_17412_512x512_fill_lanczos_center_3.png</url>
+      <url>https://a-vani.github.io/media/icon_hu_b556fe0fe2fec2e7.png</url>
       <title>Akash Vani</title>
       <link>https://a-vani.github.io/</link>
     </image>
     
     <item>
-      <title>Debugging Galaxy Evolution with L-GALAXIES</title>
-      <link>https://a-vani.github.io/project/lgal/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/lgal/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-&lt;p&gt;The formation and evolution of galaxies are among the most complex challenges in astrophysics. Recent advancements with instruments like the James Webb Space Telescope (JWST) and the Atacama Large Millimeter/submillimeter Array (ALMA) have shed light on high-redshift galaxies—those that existed billions of years ago. However, most theoretical models, such as the Munich semi-analytical model, also known as L-GALAXIES, are tuned to match galaxies in the local universe and have not been rigorously tested against these early galaxies. Researchers from the Max Planck Institute for Astrophysics and the University of Bonn comprehensively evaluated the L-GALAXIES model using the latest observations and found that while the model aligns well with the properties of local galaxies, it struggles with key aspects of high-redshift galaxies. Particularly, the study highlights critical issues with the model&amp;rsquo;s predictions of quenched galaxies, those that have ceased star formation, including their number density, size and compactness in the early universe, suggesting a need to revise the implementation of processes driving star formation quenching, including supermassive black hole feedback and galaxy mergers. The findings from this research were subsequently published in MNRAS (&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DOI&lt;/a&gt;).&lt;/p&gt;&lt;/p&gt;
-</description>
+      <title>Galaxies in the first two billion years: Earlier formation and quenching with surface-density modulated star formation and feedback</title>
+      <link>https://a-vani.github.io/publication/first_two_billion_years-copy/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/publication/first_two_billion_years-copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When relics were made: vigorous stellar rotation and low dark-matter content in the massive ultra-compact galaxy GS-9209 at z = 4.66</title>
+      <link>https://a-vani.github.io/publication/gs9209/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/publication/gs9209/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -27,28 +33,7 @@
       <link>https://a-vani.github.io/publication/lgal_scalingrel/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://a-vani.github.io/publication/lgal_scalingrel/</guid>
-      <description>&lt;!--
- 
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
- 
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
- --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -63,8 +48,8 @@ var TxtType = function(el, toRotate, period) {
         this.loopNum = 0;
         this.period = parseInt(period, 10) || 2000;
         this.txt = &#39;&#39;;
-        this.tick();
         this.isDeleting = false;
+        this.tick();
     };
 
     TxtType.prototype.tick = function() {
@@ -78,6 +63,7 @@ var TxtType = function(el, toRotate, period) {
         }
 
         this.el.innerHTML = &#39;&lt;span class=&#34;wrap&#34;&gt;&#39;+this.txt+&#39;&lt;/span&gt;&#39;;
+        this.el.classList.toggle(&#39;is-paused&#39;, !this.isDeleting &amp;&amp; this.txt === fullTxt);
 
         var that = this;
         var delta = 200 - Math.random() * 100;
@@ -107,11 +93,6 @@ var TxtType = function(el, toRotate, period) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
-        // INJECT CSS
-        var css = document.createElement(&#34;style&#34;);
-        css.type = &#34;text/css&#34;;
-        css.innerHTML = &#34;.typewrite &gt; .wrap { border-right: 0.08em solid #fff}&#34;;
-        document.body.appendChild(css);
     };
   &lt;/script&gt;  
 &lt;h1&gt;
@@ -121,12 +102,14 @@ var TxtType = function(el, toRotate, period) {
 &lt;/h1&gt;
 &lt;p&gt;&lt;a&gt;&lt;img src=&#34;https://a-vani.github.io/Aboutme.jpg&#34; width=&#34;50%&#34; style=&#34;float: left; margin-right:50px;&#34; align=&#34;left&#34; alt=&#34;Aboutme&#34; &gt; &lt;/a&gt;&lt;/p&gt;
 &lt;div class =&#39;AboutmeIndex&#39; style=&#34;text-align: justify&#34;&gt;
-&lt;p&gt;Akash (Devnagri: आकाश) signifies &amp;ldquo;space&amp;rdquo; or &amp;ldquo;sky&amp;rdquo;, while my full name, Akash Vani, translates to &amp;ldquo;a message from heaven&amp;rdquo;. If you are from the Indian subcontinent, my name might ring a bell, it is similar to the radio broadcasting station and/or the Hindi movie. If not, now you know!&lt;/p&gt;
-&lt;p&gt;Currently, I&amp;rsquo;m a PhD researcher at the &lt;a href=&#34;https://www.mpa-garching.mpg.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Max Planck Institute for Astrophysics&lt;/a&gt; (MPA), Garching and a part of the &lt;a href=&#34;https://www.imprs-astro.mpg.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;International Max Planck Research School on Astrophysics&lt;/a&gt; (IMPRS-A) at the &lt;a href=&#34;https://www.lmu.de/en/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ludwig Maximilian University&lt;/a&gt; (LMU) in Munich. In the &lt;a href=&#34;https://www.mpa-garching.mpg.de/galaxyformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Galaxy Formation and Evolution&lt;/a&gt; group, I am trying to understand the redshift evolution (0&amp;lt;z&amp;lt;10) of various galaxy scaling relations derived from different observations in a semi-analytical cosmological galaxy evolution model called &lt;a href=&#34;https://lgalaxiespublicrelease.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;L-Galaxies&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Before starting my PhD, I was an intern at MPA, exploring similar cosmic inquiries. I earned my master&amp;rsquo;s degree with a specialisation in Stellar, Galactic and Extragalactic astrophysics from the &lt;a href=&#34;https://www.physik.uni-heidelberg.de/?lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Heidelberg&lt;/a&gt;, Germany in September 2022. During this time, I focused on researching the properties of stars and mainly white dwarfs around the Sun within a semi-analytical Milky Way model called the &lt;a href=&#34;https://github.com/askenja/jjmodel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JJ model&lt;/a&gt;. This work involved extending the JJ model&amp;rsquo;s capabilities to synthesise white dwarf population, and actively contributing to the development of an extenstive local stellar catalogue. This work was supervised by &lt;a href=&#34;https://wwwstaff.ari.uni-heidelberg.de/just/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apl. Prof. Dr. Andreas Just&lt;/a&gt; and Dr. Kseniia Sysoliatina.&lt;/p&gt;
-&lt;p&gt;Originating from the town of &lt;a href=&#34;https://www.google.com/maps/place/Mapusa,&amp;#43;Goa&amp;#43;403519,&amp;#43;India/@15.5937116,73.8142237,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMwJzvGvPp0LBrl0HErKMG40RR7dyY_XG-Cs1-q!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMwJzvGvPp0LBrl0HErKMG40RR7dyY_XG-Cs1-q%3Dw203-h152-k-no!7i4000!8i3000!4m7!3m6!1s0x3bbfeae2fae1f7d9:0x7017bd171e9745a4!8m2!3d15.5937116!4d73.8142237!10e5!16zL20vMDZ0d3l6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mapusa&lt;/a&gt; in the paradise state of &lt;a href=&#34;https://www.google.com/maps/place/Goa,&amp;#43;India/@15.0455814,73.9888797,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOXg-w15mzyMyYdXZD--3CRLo8ZR0H0CylIGGR0!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOXg-w15mzyMyYdXZD--3CRLo8ZR0H0CylIGGR0%3Dw203-h189-k-no!7i1080!8i1010!4m17!1m9!3m8!1s0x3bbfba106336b741:0xeaf887ff62f34092!2sGoa,&amp;#43;India!3b1!8m2!3d15.2993265!4d74.123996!10e5!16zL20vMDFjMW5t!3m6!1s0x3bbfba106336b741:0xeaf887ff62f34092!8m2!3d15.2993265!4d74.123996!10e5!16zL20vMDFjMW5t&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Goa&lt;/a&gt;-India, I completed my schooling at &lt;a href=&#34;https://newgoa.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;New Goa’s G.S. Amonkar Vidya Mandir&lt;/a&gt; (until class 10th) and later at &lt;a href=&#34;https://stxaviershssmapusa.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;St. Xavier&amp;rsquo;s Higher Secondary School&lt;/a&gt; (until class 12th). Additionally, I acquired expertise as a watchmaker working with my father, specialising in quartz-based and automatic wristwatches.&lt;/p&gt;
-&lt;p&gt;My journey led me to the city of &lt;a href=&#34;https://www.google.com/maps/place/Pune,&amp;#43;Maharashtra,&amp;#43;India/@18.5204303,73.8567437,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO3XHWIvHNhnUlhQINL2K8FOHDA6xQgUx11SDQ5!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO3XHWIvHNhnUlhQINL2K8FOHDA6xQgUx11SDQ5%3Dw203-h132-k-no!7i1600!8i1041!4m17!1m9!3m8!1s0x3bc2bf2e67461101:0x828d43bf9d9ee343!2sPune,&amp;#43;Maharashtra,&amp;#43;India!3b1!8m2!3d18.5204303!4d73.8567437!10e5!16zL20vMDE1eTJx!3m6!1s0x3bc2bf2e67461101:0x828d43bf9d9ee343!8m2!3d18.5204303!4d73.8567437!10e5!16zL20vMDE1eTJx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pune&lt;/a&gt;, also known to be the educational capital of India, where I obtained my bachelor&amp;rsquo;s degree with a major in physics and minor in mathematics and electronic sciences from &lt;a href=&#34;http://www.unipune.ac.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Savitribai Phule Pune University&lt;/a&gt; in June 2019.&lt;/p&gt;
-&lt;p&gt;When I am not coding and evolving galaxies, I like to visit museums, go on hikes and walks, and do some analogue and digital photography.&lt;/p&gt;
+&lt;p&gt;Akash means “space” or “sky”, while my full name, Akash Vani, roughly translates to “a message from heaven”. If you are from the Indian subcontinent, the name may already sound familiar, it shares its name with India’s radio broadcasting service and even a Hindi film. If not, now you know!&lt;/p&gt;
+&lt;p&gt;I am currently a doctoral researcher at the &lt;a href=&#34;https://www.mpa-garching.mpg.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Max Planck Institute for Astrophysics&lt;/a&gt; (MPA) in Garching and part of the &lt;a href=&#34;https://www.imprs-astro.mpg.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;International Max Planck Research School on Astrophysics&lt;/a&gt; at &lt;a href=&#34;https://www.lmu.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ludwig Maximilian University&lt;/a&gt; in Munich. Within the &lt;a href=&#34;https://www.mpa-garching.mpg.de/computationalstructureformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computational Astrophysics&lt;/a&gt; department, I work with Volker Springel and Guinevere Kauffmann on modelling galaxy formation and evolution across cosmic epochs. My research focuses on developing and testing physically motivated computational models using large-scale simulations, statistical inference, scientific computing, and machine learning.&lt;/p&gt;
+&lt;p&gt;Before moving to Munich, I studied physics at the &lt;a href=&#34;https://www.physik.uni-heidelberg.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University of Heidelberg&lt;/a&gt;, where my research focused on stellar populations and white dwarfs in the solar neighbourhood. I worked on a chemodynamic Milky Way model and extended it to include white-dwarf population synthesis and also contributed to the development of a detailed local stellar catalogue, with &lt;a href=&#34;https://wwwstaff.ari.uni-heidelberg.de/mitarbeiter/just/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Andreas Just&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I grew up in Mapusa, Goa, India, where I also learned watchmaking from my father, working with both quartz and automatic watches. Later, I moved to Pune, where I completed my bachelor’s degree in physics, with mathematics and electronic sciences, at &lt;a href=&#34;https://www.unipune.ac.in/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Savitribai Phule Pune University&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When I am not coding, running simulations, or evolving galaxies, I enjoy museums, long walks and hikes, travelling, and analogue and digital photography.&lt;/p&gt;
+&lt;div class=&#34;animations&#34; style=&#34;clear: both; text-align: center;&#34;&gt;
+  &lt;script src=&#34;https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;lottie-player autoplay loop mode=&#34;normal&#34; src=&#34;https://a-vani.github.io/animation/Loader_cat.json&#34; style=&#34;width: 280px;height:auto; margin: 0 auto; &#34;&gt;&lt;/lottie-player&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -137,77 +120,93 @@ var TxtType = function(el, toRotate, period) {
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://a-vani.github.io/cv/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://a-vani.github.io/uploads/cv.pdf&#34; target=&#34;_blank&#34;&gt;Download my CV&lt;/a&gt;
-in PDF format.&lt;/p&gt;
+in PDF format. For the latest version, feel free to get in touch.&lt;/p&gt;
 &lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;September 2022&lt;/strong&gt;: Master of Science in Physics, University of Heidelberg &lt;br&gt;
+&lt;p&gt;&lt;strong&gt;2022&lt;/strong&gt;: Master of Science in Physics, University of Heidelberg &lt;br&gt;
 &lt;strong&gt;Thesis&lt;/strong&gt;: &lt;em&gt;Properties of stellar populations and white dwarfs in a semi-analytic Milky Way disk model based on Gaia DR3&lt;/em&gt;&lt;br&gt;
-&lt;strong&gt;Supervisor&lt;/strong&gt;: &lt;a href=&#34;https://wwwstaff.ari.uni-heidelberg.de/just/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Andreas Just&lt;/a&gt;, Astronomisches Rechen-Institut (ARI), ZAH, Heidelberg&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;June 2019&lt;/strong&gt;: Bachelor of Science in Physics, Savitribai Phule Pune University&lt;br&gt;
+&lt;strong&gt;Supervisor&lt;/strong&gt;: &lt;a href=&#34;https://wwwstaff.ari.uni-heidelberg.de/just/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Andreas Just&lt;/a&gt;, Astronomisches Rechen-Institut (ARI), Zentrum für Astronomie (ZAH), Heidelberg University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2019&lt;/strong&gt;: Bachelor of Science in Physics, Savitribai Phule Pune University&lt;br&gt;
 &lt;strong&gt;Thesis&lt;/strong&gt;: &lt;em&gt;Photometric Calibration of UVIT&lt;/em&gt;&lt;br&gt;
 &lt;strong&gt;Supervisor&lt;/strong&gt;: &lt;a href=&#34;https://www.iucaa.in/en?Itemid=211&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Shyam Tandon&lt;/a&gt;, Inter-University Centre for Astronomy and Astrophysics (IUCAA), Pune&lt;/p&gt;
-&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
+&lt;h2 id=&#34;appointments&#34;&gt;Appointments&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Vani&lt;/strong&gt;, Ayromlou, Kauffmann, Springel, ‘Probing galaxy evolution from z = 0 to z ≃ 10 through galaxy scaling relations in three L-GALAXIES flavours’ (MNRAS, 2025) [&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ADS&lt;/a&gt;]&lt;/li&gt;
-&lt;li&gt;Golovin, Reffert, &lt;strong&gt;Vani&lt;/strong&gt;, Bastian, Jordan, Just, ‘Identification of new nearby white dwarfs using Gaia DR3’ (A&amp;amp;A, 2024) [&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023arXiv231211664G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ADS&lt;/a&gt;]&lt;/li&gt;
-&lt;li&gt;Golovin, Reffert, Just, Jordan, &lt;strong&gt;Vani&lt;/strong&gt;, and Jahreiß, ‘The Fifth Catalogue of Nearby Stars (CNS5)’ (A&amp;amp;A, 2023) [&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ADS&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sept 2023 – Present&lt;/strong&gt; · Doctoral Researcher, Max Planck Institute for Astrophysics, Garching, Germany.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jun 2026 – Sept 2026&lt;/strong&gt; · JSPS Fellow &amp;amp; Visiting Doctoral Researcher, University of Tokyo, Tokyo, Japan.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nov 2022 – Aug 2023&lt;/strong&gt; · Research Intern, Max Planck Institute for Astrophysics, Garching, Germany.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Oct 2022 – Sept 2023&lt;/strong&gt; · Pre-doc, Heidelberg University, Heidelberg, Germany.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Oct 2021 – Oct 2022&lt;/strong&gt; · Student Assistant, German Cancer Research Center (DKFZ), Heidelberg, Germany.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sept 2021 – Sept 2022&lt;/strong&gt; · Master’s Thesis Researcher, Astronomisches Rechen-Institut, ZAH, Heidelberg University, Heidelberg, Germany.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aug 2019 – Oct 2020&lt;/strong&gt; · Visiting Researcher, Tata Institute of Fundamental Research, Mumbai, India.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jun 2019 – Jul 2019&lt;/strong&gt; · Quantum Information and Technology Summer Fellow, IISER Kolkata, Kolkata, India.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jun 2018 – Apr 2019&lt;/strong&gt; · Bachelor’s Thesis Researcher, Inter-University Centre for Astronomy and Astrophysics (IUCAA), Pune, India.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;talks-proceedings--posters&#34;&gt;Talks, Proceedings &amp;amp; Posters&lt;/h2&gt;
+&lt;h2 id=&#34;fellowships--grants&#34;&gt;Fellowships &amp;amp; Grants&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Poster: ‘&lt;a href=&#34;https://www.simonsfoundation.org/event/cosmology-and-galaxy-astrophysics-with-simulations-and-machine-learning-2024/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Cosmology and galaxy astrophysics with simulations and machine learning&lt;/em&gt;&lt;/a&gt;’, CCA (Dec 2024), New York City, USA&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://astronomy2024.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;L-Galaxies: Debugging galaxy evolution across cosmic epochs through galaxy scaling relations&lt;/em&gt;&lt;/a&gt;’, IAU-General Assembly (Aug 2024), Cape Town, South Africa&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://www.imprs-astro.mpg.de/content/seminars.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Debugging galaxy evolution across cosmic epochs through galaxy scaling relations&lt;/em&gt;&lt;/a&gt;’ IMPRS-Symposium (Jun 2024), Garching, Germany&lt;/li&gt;
-&lt;li&gt;Talk: ‘Meet thy Neighbours: The Catalogue of Nearby stars’, CCA (Apr 2024), New York City, USA&lt;/li&gt;
-&lt;li&gt;Poster: ‘&lt;a href=&#34;https://www.stsci.edu/contents/events/stsci/2024/april/recipes-to-regulate-star-formation-at-all-scales&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Debugging galaxy evolution across 0&amp;lt;z&amp;lt;10&lt;/em&gt;&lt;/a&gt;’, STScI Spring Symposium (April 2024), Baltimore, USA&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://wwwmpa.mpa-garching.mpg.de/~nlahen/GGM/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;A NIRCam-dark galaxy detected with the MIRI/F1000W filter in the MIDIS/JADES Hubble Ultra Deep Field&lt;/em&gt;&lt;/a&gt;’, Galaxy Group Meeting (Mar 2023), MPA, Garching&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://lgalaxiespublicrelease.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;L-Galaxies: Debugging galaxy evolution across cosmic epochs through galaxy scaling relations&lt;/em&gt;&lt;/a&gt;’, LGalaxies workshop (Jan 2024), DIPC, San Sebastian, Spain&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;em&gt;The battle of three flavours: L-Galaxies and scaling relations&lt;/em&gt;’, ITA (Nov 2024), Heidelberg&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://wwwmpa.mpa-garching.mpg.de/~nlahen/GGM/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Quenching massive galaxies across cosmic time with the semi-analytic model SHARK v2.0&lt;/em&gt;&lt;/a&gt;’, Galaxy Group Meeting (Nov 2023), MPA, Garching&lt;/li&gt;
-&lt;li&gt;Talk:’&lt;a href=&#34;https://eas.unige.ch/EAS2023/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Examining the redshift evolution of galaxy scaling relation between a semi-analytic galaxy evolution model and observed data&lt;/em&gt;&lt;/a&gt;’, EAS Annual Meeting (2023), Krakow, Poland&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://wwwmpa.mpa-garching.mpg.de/~nlahen/GGM/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Are the ultra-high redshift galaxies surprising in the context of standard galaxy formation models?&lt;/em&gt;&lt;/a&gt;’, Galaxy Group Meeting (May 2023), MPA, Garching&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://www.kitp.ucsb.edu/activities/whitedwarfs-c22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Properties of white dwarfs in a semi-analytic Milky Way model based on Gaia DR3&lt;/em&gt;&lt;/a&gt;’, [&lt;a href=&#34;https://www.youtube.com/watch?list=PLTz4HiOhksNvvzHY8rsDtNAzLt7UiwiH1&amp;amp;v=_DnDSi_EvUc&amp;amp;feature=youtu.be&amp;amp;ab_channel=KavliInstituteforTheoreticalPhysics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&lt;/a&gt;], White Dwarfs from Physics to Astrophysics (2022), KITP, Santa Barbara, USA&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;em&gt;The stellar content of the solar neighborhood &amp;amp; its modelling&lt;/em&gt;’, Campbell Hall (Sept 2022), University of California, Berkely, USA&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/physik/institute/astronomie-und-astrophysik/astronomie-hea/kontakt/beschaeftigte-am-iaat/thomas-rauch/conferences/eurowd22-22nd-european-workshop-on-white-dwarfs-old/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Properties of White Dwarfs in the JJ model based on Gaia (E)DR3&lt;/em&gt;&lt;/a&gt;’, EUROWD22: 22nd European Workshop on White Dwarfs, Tübingen, Germany&lt;/li&gt;
-&lt;li&gt;ePoster: ‘&lt;a href=&#34;https://eas.unige.ch/EAS2022/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Properties of White Dwarfs in the JJ model based on Gaia EDR3&lt;/em&gt;&lt;/a&gt;’, EAS Annual Meeting 2022 (virtual), Valencia, Spain&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;a href=&#34;https://silkroad.zah.uni-heidelberg.de/joomla/index.php?option=com_content&amp;amp;view=article&amp;amp;id=192&amp;amp;Itemid=562&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Extending the JJ model to the White Dwarfs&lt;/em&gt;&lt;/a&gt;’, Teeminar (2022), at ARI, Heidelberg&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;em&gt;High-Mass X-ray Binaries in the Milky Way&lt;/em&gt;’, Coursework (2020) at Heidelberg&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;em&gt;Cosmic Star Formation History&lt;/em&gt;’, Coursework (2020) at Heidelberg&lt;/li&gt;
-&lt;li&gt;Talk: ‘&lt;em&gt;Evidence for Galactic disc RR Lyrae stars in the Solar neighborhood&lt;/em&gt;’, Coursework (2020) at Heidelberg&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2026&lt;/strong&gt; · &lt;strong&gt;JSPS Fellowship&lt;/strong&gt;, hosted at the University of Tokyo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2023&lt;/strong&gt; · &lt;strong&gt;Max Planck Society Doctoral Fellowship&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2022&lt;/strong&gt; · Max Planck Institute for Astrophysics Research Internship Grant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-3370-8086&amp;amp;sort=date%20desc&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;View my publications on NASA ADS&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vani, A.&lt;/strong&gt;, Ayromlou, R., Kauffmann, G., &amp;amp; Springel, V., &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Galaxies in the first two billion years: Earlier formation and quenching with surface-density modulated star formation and feedback&lt;/a&gt;, submitted (2026).&lt;/li&gt;
+&lt;li&gt;Rober Pascalau, et al. (Incl &lt;strong&gt;Akash Vani&lt;/strong&gt;). &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag210P/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;When relics were made: vigorous stellar rotation and low dark-matter content in the massive ultra-compact galaxy GS-9209 at z = 4.66&lt;/a&gt; (2026).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vani, A.&lt;/strong&gt;, Ayromlou, R., Kauffmann, G., &amp;amp; Springel, V., &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Probing galaxy evolution from z = 0 to z ≃ 10 through galaxy scaling relations in three L-Galaxies flavours&lt;/a&gt; (2025).&lt;/li&gt;
+&lt;li&gt;Golovin, A., Reffert, S., &lt;strong&gt;Vani, A.&lt;/strong&gt;, Bastian, U., Jordan, S., &amp;amp; Just, A., &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2024A%26A...683A..33G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Identification of new nearby white dwarfs using Gaia DR3&lt;/a&gt; (2024).&lt;/li&gt;
+&lt;li&gt;Golovin, A., Reffert, S., Just, A., Jordan, S., &lt;strong&gt;Vani, A.&lt;/strong&gt;, &amp;amp; Jahreiß, H., &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;The Fifth Catalogue of Nearby Stars (CNS5)&lt;/a&gt; (2023).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;skills--competencies&#34;&gt;Skills &amp;amp; Competencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Programming:&lt;/strong&gt; Python (Astropy, NumPy, SciPy, pandas, Matplotlib, scikit-learn, Optuna, PyTorch), C/C++, Bash.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Statistics:&lt;/strong&gt; MCMC, Bayesian analysis, machine learning and deep learning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;High-performance computing:&lt;/strong&gt; SLURM, SGE, large-scale parallel workflows.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tools:&lt;/strong&gt; Git/GitHub, LaTeX, HTML, DS9, TOPCAT, Linux/Unix, MS Office, Adobe Photoshop, Adobe Illustrator.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;talks--posters&#34;&gt;Talks &amp;amp; Posters&lt;/h2&gt;
+&lt;h3 id=&#34;2026&#34;&gt;2026&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talks:&lt;/strong&gt; AG Meeting — &lt;em&gt;Building Blocks of Cosmic Structure&lt;/em&gt;, Germany (Sep 2026), University of Osaka, Japan (Aug 2026), &lt;em&gt;The Formation of Stars and Planets in Evolving Galaxies&lt;/em&gt;, Okinawa, Japan (Aug 2026), University of Tokyo, Japan (Jul 2026), Kavli IPMU, Japan (Jul 2026), The Institute for Cosmic Ray Research, Japan (Jul 2026), &lt;em&gt;AGN feedback across all scales and time&lt;/em&gt;, European Southern Observatory (ESO), Germany (Jul 2026), &lt;em&gt;JASMINE Consortium Meeting&lt;/em&gt;, Kyoto University, Japan (Jul 2026), Munich Institute for Astro-, Particle and BioPhysics (MIAPbP), Germany (Jun 2026), CEA Saclay, France (May 2026), IMPRS Symposium, Germany (May 2026), University of Bonn, Germany (Apr 2026).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Posters:&lt;/strong&gt; SOKENDAI, Hayama, Japan (Jun 2026).&lt;/p&gt;
+&lt;h3 id=&#34;2025&#34;&gt;2025&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talks:&lt;/strong&gt; Tata Institute Of Fundamental Research, India (Dec 2025), &lt;em&gt;Multiscale Environment of AGN Across Cosmic Time&lt;/em&gt;, Ringberg, Germany (Nov 2025), L-Galaxies Collaboration Meeting, Germany (Oct 2025), &lt;em&gt;Baryon Pasting Collaboration Meeting&lt;/em&gt;, Yale University, USA (Apr 2025), Max Planck Institute for Astrophysics, Germany (Apr 2025), L-Galaxies Seminar Series, Germany (Mar 2025), Munich Institute for Astro-, Particle and BioPhysics (MIAPbP), Germany (Mar 2025), University of Zurich, Switzerland (Feb 2025).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Posters:&lt;/strong&gt; Saas-Fee Advanced Course, Switzerland (Jan 2025).&lt;/p&gt;
+&lt;h3 id=&#34;2024&#34;&gt;2024&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talks:&lt;/strong&gt; IAU General Assembly, South Africa (Aug 2024), IMPRS Symposium, Germany (Jun 2024), Center for Computational Astrophysics (CCA), USA (Apr 2024), Max Planck Institute for Astrophysics, Germany (Mar 2024), L-Galaxies Collaboration Workshop, Spain (Jan 2024).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Posters:&lt;/strong&gt; Center for Computational Astrophysics (CCA), USA (Dec 2024), STScI Spring Symposium, USA (Apr 2024).&lt;/p&gt;
+&lt;h3 id=&#34;2023&#34;&gt;2023&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talks:&lt;/strong&gt;  Heidelberg University, Germany (Nov 2023), Max Planck Institute for Astrophysics, Germany (Nov 2023), EAS Annual Meeting, Poland (Jul 2023), Max Planck Institute for Astrophysics, Germany (May 2023).&lt;/p&gt;
+&lt;h3 id=&#34;2022&#34;&gt;2022&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Talks:&lt;/strong&gt; &lt;em&gt;White Dwarfs from Physics to Astrophysics&lt;/em&gt;, KITP, USA (Nov 2022), University of California, USA (Nov 2022), &lt;em&gt;EUROWD22: 22nd European Workshop on White Dwarfs&lt;/em&gt;, Germany (Aug 2022), Heidelberg University, Germany (Mar 2022).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Posters:&lt;/strong&gt; &lt;em&gt;EAS Annual Meeting&lt;/em&gt;, Spain (Jun 2022).&lt;/p&gt;
+&lt;h2 id=&#34;outreach-and-activities&#34;&gt;Outreach and Activities&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Public outreach talk on recent developments in computational astrophysics for undergraduate students (Jan 2026, Goa)&lt;/li&gt;
+&lt;li&gt;Research highlight of the month (Feb 2025), featured on the &lt;a href=&#34;https://www.mpa-garching.mpg.de/1108431/hl202502&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MPA highlight webpage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Public outreach talk on recent developments in astronomy, for 10th grade students (Aug 2023, Goa)&lt;/li&gt;
+&lt;li&gt;The CNS5 paper (Golovin et al. 2023, including Vani) featured on the &lt;a href=&#34;https://www.cosmos.esa.int/web/gaia/iow_20230125&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ESA Gaia mission website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Experiment demonstrations for open-day celebrations at my high school (2014–2016, Goa) and undergraduate university (2016–2019, Pune)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Math Made Easy&lt;/em&gt; — a project visualising geometrical theorems with 3D physical models to make mathematics engaging for school students (2016, Mumbai)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;schools-and-workshops&#34;&gt;Schools and Workshops&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;April 2024: &lt;a href=&#34;https://www.munich-iapbp.de/adonis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Abundance gradients in the local universe&lt;/a&gt;, MIAPbP, Garching, Germany&lt;/li&gt;
-&lt;li&gt;June 2023: &lt;a href=&#34;https://astro.physics.uoc.gr/Conferences/Astrostatistics_School_Crete_2023/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Summer School for Astrostatistics&lt;/a&gt;, Crete, Greece&lt;/li&gt;
-&lt;li&gt;Sept 2022: &lt;a href=&#34;https://gaia-unlimited.github.io/community-workshop1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GaiaUnlimited workshop and unconference&lt;/a&gt;, Heidelberg, Germany&lt;/li&gt;
-&lt;li&gt;Aug 2022: &lt;a href=&#34;https://www2.mpia-hd.mpg.de/imprs-hd/SummerSchools/2022/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Astronomy, astrochemistry &amp;amp; the origin of life&lt;/a&gt;, IMPRS, Heidelberg, Germany&lt;/li&gt;
-&lt;li&gt;Jun 2022: &lt;a href=&#34;https://astronomische-gesellschaft.de/en/working-groups/young-ag/the-first-ag-summer-school-in-bonn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junge AG summer school&lt;/a&gt;, MPIfR, Bonn, Germany&lt;/li&gt;
-&lt;li&gt;Jun 2022: &lt;a href=&#34;https://epsforum.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EPS forum 2022&lt;/a&gt;, Paris, France&lt;/li&gt;
-&lt;li&gt;Sept 2021: &lt;a href=&#34;https://www2.mpia-hd.mpg.de/imprs-hd/SummerSchools/2021/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stellar Ecosystems, IMPRS (Virtual)&lt;/a&gt;, Heidelberg, Germany&lt;/li&gt;
-&lt;li&gt;Aug 2021: &lt;a href=&#34;https://www.ztf.caltech.edu/summer-school-2021.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ZTF (Virtual) Summer School 2021&lt;/a&gt;, Caltech, USA&lt;/li&gt;
-&lt;li&gt;July 2021: &lt;a href=&#34;https://nexsci.caltech.edu/workshop/2021/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2021 Sagan Exoplanet Summer Virtual Workshop&lt;/a&gt;, NExScI, Caltech, USA&lt;/li&gt;
+&lt;li&gt;Jun 2026: Continuing the JWST Revolution, MIAPbP, Garching, Germany&lt;/li&gt;
+&lt;li&gt;Jun 2025: Vatican Observatory Summer School, Vatican Observatory&lt;/li&gt;
+&lt;li&gt;Mar 2025: Unveiling a Universe of Black Holes, MIAPbP, Garching, Germany&lt;/li&gt;
+&lt;li&gt;Jan 2025: Galaxies and Black Holes in the First Billion Years, Saas-Fee, Switzerland&lt;/li&gt;
+&lt;li&gt;April 2024: Abundance gradients in the local universe, MIAPbP, Garching, Germany&lt;/li&gt;
+&lt;li&gt;June 2023: Summer School for Astrostatistics, Crete, Greece&lt;/li&gt;
+&lt;li&gt;Sept 2022: GaiaUnlimited workshop and unconference, Heidelberg, Germany&lt;/li&gt;
+&lt;li&gt;Aug 2022: Astronomy, astrochemistry &amp;amp; the origin of life, IMPRS, Heidelberg, Germany&lt;/li&gt;
+&lt;li&gt;Jun 2022: Junge AG summer school, MPIfR, Bonn, Germany&lt;/li&gt;
+&lt;li&gt;Jun 2022: EPS forum 2022, Paris, France&lt;/li&gt;
+&lt;li&gt;Sept 2021: Stellar Ecosystems, IMPRS (Virtual), Heidelberg, Germany&lt;/li&gt;
+&lt;li&gt;Aug 2021: ZTF (Virtual) Summer School 2021, Caltech, USA&lt;/li&gt;
+&lt;li&gt;July 2021: 2021 Sagan Exoplanet Summer Virtual Workshop, NExScI, Caltech, USA&lt;/li&gt;
 &lt;li&gt;Jan 2021: Astronomy Winter School (Virtual): High-Energy Astrophysics, NTHU, Taiwan&lt;/li&gt;
-&lt;li&gt;Oct 2020: &lt;a href=&#34;https://indico.cern.ch/event/963826/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SHINE Autumn School (Virtual)&lt;/a&gt; CERN, Switzerland&lt;/li&gt;
-&lt;li&gt;Sept 2020: &lt;a href=&#34;https://www.bao.am/meetings/meetings/SS2020/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Astronomy and Data Science&lt;/a&gt;, 7BISS (Virtual), Armenia&lt;/li&gt;
+&lt;li&gt;Oct 2020: SHINE Autumn School (Virtual) CERN, Switzerland&lt;/li&gt;
+&lt;li&gt;Sept 2020: Astronomy and Data Science, 7BISS (Virtual), Armenia&lt;/li&gt;
 &lt;li&gt;Nov 2019: Astrosat’s Data Analysis workshop, Goa University, India&lt;/li&gt;
-&lt;li&gt;June 2019: &lt;a href=&#34;https://www.iiserkol.ac.in/~qiqt19/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantum Information and Quantum Technology&lt;/a&gt;, IISER Kolkata, India&lt;/li&gt;
+&lt;li&gt;June 2019: Quantum Information and Quantum Technology, IISER Kolkata, India&lt;/li&gt;
 &lt;li&gt;June 2018: Introductory Summer School in Astronomy and Astrophysics, IUCAA, Pune, India&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;outreach-and-activities&#34;&gt;Outreach and Activities&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Public outreach talk on recent developments in astronomy, for 10th grade students (Aug 2023, Goa)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;coursework&#34;&gt;Coursework&lt;/h2&gt;
-&lt;p&gt;My Master&amp;rsquo;s coursework at Heidelberg University:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt; &lt;b&gt;Core courses&lt;/b&gt;: &lt;i&gt;Astronomical Techniques, Cosmology, General Relativity, Theoretical Astrophysics&lt;/i&gt; &lt;/li&gt;
-&lt;li&gt; &lt;b&gt;Specialisation&lt;/b&gt;: &lt;i&gt;Stellar Astrophysics, Galactic and Extragalactic Astronomy, Dynamics of Galaxies, Star Clusters and Planetary Systems &lt;/i&gt; &lt;/li&gt;
-&lt;li&gt; &lt;b&gt;Select electives&lt;/b&gt;: &lt;i&gt; Introduction to GPU Accelerated Computing, Introduction to Machine Learning, Computational Statistics and Data Analysis, Statistical Methods, Startup Lab 2020, Solving problems on Quantum hardware, Python: Programming for Scientists, The Stellar Cookbook: A practical guide to the theory of stars, Advance Dark Matter &lt;/i&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Select coursework at Savitribai Phule Pune University:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt; &lt;b&gt;Physics&lt;/b&gt;: &lt;i&gt;Computational Physics, Quantum Mechanics, Thermodynamics and Statistical Physics, Nuclear Physics, Advanced Electronics&lt;/i&gt; &lt;/li&gt;
-&lt;li&gt; &lt;b&gt;Electives in Physics&lt;/b&gt;: &lt;i&gt; Elements of Materials Science and Electro Acoustics and Entertainment Electronics &lt;/i&gt; &lt;/li&gt;
-&lt;li&gt; &lt;b&gt;Mathematics&lt;/b&gt;: &lt;i&gt; Laplace Transform and Fourier Series, Linear Algebra, Multivariable Calculus &lt;/i&gt; &lt;/li&gt;
-&lt;li&gt; &lt;b&gt;Electronic science&lt;/b&gt;: &lt;i&gt; Analog and Digital Circuit Design, Electronic Instrumentation, Communication Electronics &lt;/i&gt; &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Online courses:&lt;/p&gt;
 &lt;ul&gt;
@@ -232,199 +231,139 @@ in PDF format.&lt;/p&gt;
       <link>https://a-vani.github.io/usefullinks/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://a-vani.github.io/usefullinks/</guid>
-      <description>&lt;h3 id=&#34;projects-that-i-have-worked-on&#34;&gt;Projects that I have worked on&lt;/h3&gt;
+      <description>&lt;div class=&#34;research-collaborations&#34;&gt;
+&lt;h2 id=&#34;research-projects--collaborations&#34;&gt;Research Projects &amp;amp; Collaborations&lt;/h2&gt;
+&lt;p&gt;A selection of research frameworks, datasets, and collaborative projects that I have worked with or contributed to.&lt;/p&gt;
+&lt;p&gt;Learn more about my &lt;a href=&#34;https://a-vani.github.io/#research-interests&#34;&gt;research interests&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;l-galaxies&#34;&gt;L-Galaxies&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgalaxiespublicrelease.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;L-Galaxies&lt;/a&gt; is a cosmological semi-analytic model of galaxy formation and evolution. It follows key baryonic processes including gas accretion, star formation, feedback, black-hole growth, and environmental effects, along dark-matter halo merger trees extracted from cosmological N-body simulations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;L-Galaxies: It is a semi-analytical galaxy formation model that uses a set of physical prescriptions to model baryonic physics on top of dark matter halo merger trees.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://lgalaxiespublicrelease.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code and documentation on GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;References:
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2015MNRAS.451.2663H/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henriques+2015&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5795H/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henriques+2020&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2021MNRAS.505..492A/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ayromlou+2021&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani+2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2025&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgalaxiespublicrelease.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code and documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;JJ model: It is a semi-analytical chemo-dynamic model of the Milky Way which is an excellent tool for population synthesis studies.&lt;/p&gt;
+&lt;h3 id=&#34;calomera&#34;&gt;CALOMERA&lt;/h3&gt;
+&lt;p&gt;CALOMERA is a semi-analytic chemo-dynamical model of the Milky Way designed for stellar-population synthesis and Galactic-structure studies. It extends the earlier &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2010MNRAS.402..461J/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JJ model&lt;/a&gt; framework.&lt;/p&gt;
+&lt;p&gt;The CALOMERA framework builds on this foundation by extending the population-synthesis approach across a broader range of stellar populations and evolutionary stages, including white dwarfs, main-sequence stars, and brown dwarfs, with applications to reconstructing the formation and evolution of the Milky Way. The framework can also be used to estimate stellar contamination in deep JWST fields, support survey planning, and predict detection fractions for different stellar populations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/askenja/jjmodel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sysoliatina &amp;amp; Vani 2026&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://jjmodel.readthedocs.io/en/latest/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;References:
+&lt;/ul&gt;
+&lt;h3 id=&#34;catalogue-of-nearby-stars&#34;&gt;Catalogue of Nearby Stars&lt;/h3&gt;
+&lt;p&gt;The Catalogue of Nearby Stars builds on the long-running work of Gliese and Jahreiß to map the solar neighbourhood. The fifth iteration, CNS5, used Gaia and complementary data to update the census of stars and brown dwarfs within 25 pc (about 81.5 light-years), with improved selection, validation, and deblending.&lt;/p&gt;
+&lt;p&gt;Follow-up work identified previously missed nearby white dwarfs, while CNS6 extends the catalogue with more comprehensive physical characterisation of nearby objects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Just &amp;amp; Jahreiß 2010 - &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2010MNRAS.402..461J/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper I&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Just+2011 - &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2011MNRAS.411.2586J/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Rybizki &amp;amp; Just 2015 - &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2015MNRAS.447.3880R/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper III&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Sysoliatina &amp;amp; Just 2021 - &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..39S/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper IV&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Sysoliatina &amp;amp; Just 2022 - &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2022A%26A...666A.130S/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper V&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Golovin et al. 2026&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2024A%26A...683A..33G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dc.g-vo.org/CNS5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CNS5 catalogue — GAVO&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The Fifth Catalogue of Nearby Stars (CNS5):&lt;/p&gt;
+&lt;hr&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;astronomy--astrophysics-resources&#34;&gt;Astronomy &amp;amp; Astrophysics Resources&lt;/h2&gt;
+&lt;h3 id=&#34;data-archives--catalogues&#34;&gt;Data archives &amp;amp; catalogues&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Catalogue on &lt;a href=&#34;https://dc.g-vo.org/CNS5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;German Astrophysical Virtual Observatory (GAVO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Publication: &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin+2023&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Code for debledning of sources on &lt;a href=&#34;https://github.com/AlexGolovin/gaiaedr3_g_rp_synthetic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Press:
+&lt;li&gt;&lt;a href=&#34;https://gea.esac.esa.int/archive/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gaia Archive&lt;/a&gt; — Astrometry, photometry, spectroscopy, and derived products from ESA&amp;rsquo;s Gaia mission.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vizier.cds.unistra.fr/viz-bin/VizieR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VizieR&lt;/a&gt; — Collection of published astronomical catalogues.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://simbad.u-strasbg.fr/simbad/sim-fbasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SIMBAD&lt;/a&gt; — Object database providing identifiers, measurements, bibliography, and cross-matches.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dc.g-vo.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;German Astrophysical Virtual Observatory (GAVO)&lt;/a&gt; — German contribution to the international Virtual Observatory ecosystem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;analysis--modelling&#34;&gt;Analysis &amp;amp; modelling&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cosmos.esa.int/web/gaia/iow_20230125&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gaia Image of the Week&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zah.uni-heidelberg.de/news/detail/fifth-catalogue-of-nearby-stars-cns5-published&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Astronomy Heidelberg press&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MuWtZE3klj0&amp;amp;feature=youtu.be&amp;amp;ab_channel=StefanJordan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Catalogue of Nearby Stars [&lt;a href=&#34;https://en.wikipedia.org/wiki/Gliese_Catalogue_of_Nearby_Stars&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.g-vo.org/topcat/topcat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TOPCAT&lt;/a&gt; — Interactive exploration, manipulation, and visualisation of tabular astronomical data.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sites.google.com/cfa.harvard.edu/saoimageds9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SAOImage DS9&lt;/a&gt; — Visualisation and analysis of astronomical imaging data.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HEASoft&lt;/a&gt; — Analysis suite for high-energy astrophysics, including spectral, timing, and imaging data.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://iraf-community.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IRAF&lt;/a&gt; — Long-standing software environment for astronomical image and spectral analysis.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/MESAHub/mesa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MESA&lt;/a&gt; — Open-source framework for stellar-evolution calculations.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;astronomy-and-astrophysics-tools-and-general-links&#34;&gt;Astronomy and Astrophysics tools and general links&lt;/h3&gt;
+&lt;h3 id=&#34;literature--research&#34;&gt;Literature &amp;amp; research&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://gea.esac.esa.int/archive/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gaia data archive&lt;/a&gt;: Contains the photometry, astrometry, and spectroscopic data captured by ESA&amp;rsquo;s Gaia mission.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.g-vo.org/topcat/topcat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Topcat&lt;/a&gt;: An interactive graphical viewer and editor for tabular data.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://iraf-community.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IRAF&lt;/a&gt;: A software for the reduction of astronomical images and spectra in pixel array form.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HEASoft&lt;/a&gt;: A software to manipulate FITS files for X-ray astronomical spectral, timing, and imaging data analysis.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MESAHub/mesa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MESA&lt;/a&gt;: Code to run experiments in stellar evolution.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://dc.g-vo.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;German Astrophysical Virtual Observatory (GAVO)&lt;/a&gt;: The German contribution to the International Virtual Observatory Association, an international effort to create and expand the concept of Virtual Observatory.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://sites.google.com/cfa.harvard.edu/saoimageds9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DS9&lt;/a&gt;: An astronomical imaging and data visualization application.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://vizier.cds.unistra.fr/viz-bin/VizieR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VizieR&lt;/a&gt;: It provides the most complete library of published astronomical catalogues.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://simbad.u-strasbg.fr/simbad/sim-fbasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SIMBAD&lt;/a&gt;: An astronomical database provides basic data, cross-identifications, bibliography and measurements for astronomical objects&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NASA/ADS&lt;/a&gt;: An online database for astronomy and physics papers from both peer-reviewed and non-peer-reviewed sources.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://arxiv.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv&lt;/a&gt;: It is an open-access repository of electronic preprints and post-prints approved for posting after moderation, but not peer review.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://jobregister.aas.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AAS Job Register&lt;/a&gt;: A database to find and post astronomy-related jobs.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://eas.unige.ch/jobs.jsp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EAS Job Directory&lt;/a&gt;: A database to find and post astronomy-related jobs.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/meetings/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Astronomy Conference&lt;/a&gt;: A database curated by the Canadian Astronomy Data Centre to find and post astronomy-related conferences and meetings.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NASA ADS&lt;/a&gt; — Literature database for astronomy, astrophysics, and physics.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv&lt;/a&gt; — Open repository for scientific preprints.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;programming-links&#34;&gt;Programming links&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;scientific-computing--programming&#34;&gt;Scientific Computing &amp;amp; Programming&lt;/h2&gt;
+&lt;p&gt;These are some of the tools and frameworks I regularly use or find useful for computational research.&lt;/p&gt;
+&lt;h3 id=&#34;development&#34;&gt;Development&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Studio Code&lt;/a&gt;: It is a code editor optimised for building and debugging.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/atom&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Atom&lt;/a&gt;: It is a free and open-source text and source code editor.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt;: It is a distribution of the Python and R programming languages for scientific computing that aims to simplify package management and deployment.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jupyter Notebook&lt;/a&gt;: It is a web-based interactive computing platform.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt;: A high-level, general-purpose programming language.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.astropy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Astropy&lt;/a&gt;: Python library designed for use in astronomy.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://numpy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NumPy&lt;/a&gt;: A Python library for the analysis of large multi-dimensional arrays and matrices.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://scipy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SciPy&lt;/a&gt;: A Python library used for scientific computing and technical computing.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://pandas.pydata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pandas&lt;/a&gt;: A Python library for data manipulation and analysis.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://scikit-learn.org/stable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scikit-learn&lt;/a&gt;: A machine learning library for Python.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.tensorflow.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TensorFlow&lt;/a&gt;: A library for machine learning and artificial intelligence.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://matplotlib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matplotlib&lt;/a&gt;: A plotting library for Python.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://seaborn.pydata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seaborn&lt;/a&gt;: Python data visualization library.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/plotly/plotly.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;plotly.py&lt;/a&gt;: An interactive, open-source, and browser-based graphing library for Python.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.hdfgroup.org/solutions/hdf5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HDF5&lt;/a&gt;: An open-source file format that supports large, complex, heterogeneous data. Easily importable in Python.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://fits.gsfc.nasa.gov/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FITS&lt;/a&gt;: An open standard defining a digital file format useful for storage, transmission and processing of data. Easily importable in Python.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://isocpp.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;C++&lt;/a&gt;: A high-level, general-purpose programming language.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Studio Code&lt;/a&gt; — Code editing, development, debugging, and remote workflows.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jupyter.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jupyter&lt;/a&gt; — Interactive notebooks and computational workflows.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt; — My primary language for scientific analysis, modelling, and machine learning.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://isocpp.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;C++&lt;/a&gt; — Used for performance-critical scientific modelling and simulation development.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.anaconda.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt; — Python environments and package management for scientific workflows.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;general-links&#34;&gt;General links&lt;/h3&gt;
+&lt;h3 id=&#34;scientific-python&#34;&gt;Scientific Python&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mobaxterm.mobatek.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MobaXterm&lt;/a&gt;: A toolbox for remote computing. It provides all remote network tools and Unix commands to the Windows desktop.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.vmware.com/products/workstation-pro.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VMware Workstation&lt;/a&gt;: It enables users to set up virtual machines on a single physical machine and use them simultaneously along with the host machine.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.virtualbox.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VirtualBox&lt;/a&gt;: Similar to VMware, it is a cross-platform virtualization software.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.overleaf.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Overleaf&lt;/a&gt;: Overleaf is a cloud-based LaTeX editor used for writing, editing and publishing documents.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.mendeley.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mendeley&lt;/a&gt;: It is a reference manager software.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.notion.so/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt;: It is a productivity and note-taking web application.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://lubuntu.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lubuntu&lt;/a&gt;: It is a fast and lightweight operating system with a clean and easy-to-use user interface. It is a lightweight Linux distribution based on Ubuntu.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://ubuntu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ubuntu&lt;/a&gt;: It is a modern, open-source operating system on Linux.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://numpy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NumPy&lt;/a&gt; — Numerical arrays and vectorised computation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scipy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SciPy&lt;/a&gt; — Scientific algorithms, optimisation, integration, statistics, and numerical methods.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pandas.pydata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pandas&lt;/a&gt; — Tabular data manipulation and analysis.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.astropy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Astropy&lt;/a&gt; — Astronomy-focused Python ecosystem.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matplotlib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matplotlib&lt;/a&gt; — Scientific plotting and visualisation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://seaborn.pydata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seaborn&lt;/a&gt; — Statistical data visualisation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/plotly/plotly.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly&lt;/a&gt; — Interactive and browser-based visualisation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;heidelberg-interview-questions&#34;&gt;Heidelberg interview questions&lt;/h3&gt;
-&lt;p&gt;Refer to &lt;a href=&#34;https://rohankulkarni.me/blog/heidelberg/interview/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rohan Kulkarni&amp;rsquo;s website&lt;/a&gt;. He provides an overview of the application process along with tips and suggestions for the interview.&lt;/p&gt;
-&lt;p&gt;The course catalogue of Heidelberg University can be found &lt;a href=&#34;https://lsf.uni-heidelberg.de/qisserver/rds?state=user&amp;amp;type=0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;references-to-building-your-own-website&#34;&gt;References to building your own website&lt;/h3&gt;
+&lt;h3 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt;: It is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt;: It is an open-source framework to build static websites. &lt;a href=&#34;https://github.com/wowchemy/starter-hugo-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo themes&lt;/a&gt; are available on GitHub.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://go.dev/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Go/Golang&lt;/a&gt;: It is a statically typed, compiled high-level programming language.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=c7vpcqA6SEQ&amp;amp;ab_channel=ChrisStayte&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Youtube video&lt;/a&gt; to get you started with building your own website.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scikit-learn.org/stable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scikit-learn&lt;/a&gt; — Classical machine-learning and model-selection tools.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tensorflow.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TensorFlow&lt;/a&gt; — Deep-learning and machine-learning framework.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;scientific-data-formats&#34;&gt;Scientific data formats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hdfgroup.org/solutions/hdf5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HDF5&lt;/a&gt; — Efficient storage of large and complex numerical datasets.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fits.gsfc.nasa.gov/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FITS&lt;/a&gt; — Standard data format widely used in astronomy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;computing--research-workflow&#34;&gt;Computing &amp;amp; Research Workflow&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ubuntu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ubuntu&lt;/a&gt; — Linux environment widely used for scientific computing and HPC.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lubuntu.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lubuntu&lt;/a&gt; — Lightweight Ubuntu-based Linux distribution.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mobaxterm.mobatek.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MobaXterm&lt;/a&gt; — Remote access and Unix tools for Windows.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.virtualbox.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VirtualBox&lt;/a&gt; — Cross-platform virtualisation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.vmware.com/products/workstation-pro.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VMware Workstation&lt;/a&gt; — Virtual-machine environment.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.overleaf.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Overleaf&lt;/a&gt; — Collaborative LaTeX writing and publishing.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mendeley.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mendeley&lt;/a&gt; — Literature and reference management.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.notion.so/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Notion&lt;/a&gt; — Notes, project organisation, and knowledge management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;careers-conferences--community&#34;&gt;Careers, Conferences &amp;amp; Community&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobregister.aas.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AAS Job Register&lt;/a&gt; — Academic and research opportunities in astronomy and astrophysics.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eas.unige.ch/jobs.jsp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EAS Job Directory&lt;/a&gt; — European astronomy and astrophysics opportunities.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/meetings/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Astronomy Meetings&lt;/a&gt; — Astronomy conferences and meetings curated by the Canadian Astronomy Data Centre.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;heidelberg-physics&#34;&gt;Heidelberg Physics&lt;/h3&gt;
+&lt;p&gt;For prospective students, &lt;a href=&#34;https://rohankulkarni.me/posts/blogs/heidelberg_interview/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rohan Kulkarni&amp;rsquo;s Heidelberg interview guide&lt;/a&gt; provides a useful overview of the application and interview process.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://uebungen.physik.uni-heidelberg.de/vorlesung/20262&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Heidelberg University course catalogue&lt;/a&gt; provides information on available courses and modules.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;building-an-academic-website&#34;&gt;Building an Academic Website&lt;/h2&gt;
+&lt;p&gt;A few resources that may be useful if you are building your own academic or personal website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; — Free static-site hosting directly from a GitHub repository.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; — Fast, open-source static-site generator.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wowchemy/starter-hugo-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo themes&lt;/a&gt; — Starting points for academic and research websites.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://go.dev/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Go&lt;/a&gt; — The programming language underlying Hugo.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=c7vpcqA6SEQ&amp;amp;ab_channel=ChrisStayte&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getting started with Hugo and GitHub Pages&lt;/a&gt; — Introductory video guide.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;useful-links-animation&#34;&gt;
+
+
+
+
+
+  
+
+
+
+
+
+  &lt;script src=&#34;https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js&#34;&gt;&lt;/script&gt;
+  &lt;lottie-player autoplay loop mode=&#34;normal&#34; src=&#34;https://a-vani.github.io/animation/Planet_Orbit.json&#34; style=&#34;width: 280px;height:auto; margin: 0 auto; &#34;&gt;&lt;/lottie-player&gt;
+
+
+&lt;/div&gt;
 </description>
     </item>
     
@@ -433,38 +372,7 @@ in PDF format.&lt;/p&gt;
       <link>https://a-vani.github.io/publication/new_wds/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://a-vani.github.io/publication/new_wds/</guid>
-      <description>&lt;!--
- 
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
- 
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
- --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Fifth Catalogue of Nearby Stars</title>
-      <link>https://a-vani.github.io/project/cns5/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/cns5/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-&lt;p&gt;This project aimed to compile and analyse a comprehensive catalogue of stars within a 25 parsec radius of the Sun. My primary contributions involved early analyses of the catalogue&amp;rsquo;s completeness limit and luminosity function, followed by investigations into local stellar density variations and the properties of the stellar content. The findings from this research were subsequently published in A&amp;amp;A (&lt;a href=&#34;https://doi.org/10.1051/0004-6361/202244250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DOI&lt;/a&gt;).&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -472,873 +380,7 @@ in PDF format.&lt;/p&gt;
       <link>https://a-vani.github.io/publication/cns5/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://a-vani.github.io/publication/cns5/</guid>
-      <description>&lt;!--
- 
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
- 
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
- --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The stellar content of the solar neighborhood &amp; its modelling</title>
-      <link>https://a-vani.github.io/talk/the-stellar-content-of-the-solar-neighborhood-its-modelling/</link>
-      <pubDate>Mon, 21 Nov 2022 11:30:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/talk/the-stellar-content-of-the-solar-neighborhood-its-modelling/</guid>
-      <description>&lt;!--
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Slides can be added in a few ways:
-
-- **Create** slides using Wowchemy&#39;s [_Slides_](https://wowchemy.com/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://wowchemy.com/docs/writing-markdown-latex/).
-
-Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page.
---&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Properties of white dwarfs in a semi-analytic Milky Way model based on Gaia DR3</title>
-      <link>https://a-vani.github.io/talk/properties-of-white-dwarfs-in-a-semi-analytic-milky-way-model-based-on-gaia-dr3/</link>
-      <pubDate>Thu, 17 Nov 2022 16:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/talk/properties-of-white-dwarfs-in-a-semi-analytic-milky-way-model-based-on-gaia-dr3/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/_DnDSi_EvUc?autoplay=1&amp;amp;mute=1&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;!--
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Slides can be added in a few ways:
-
-- **Create** slides using Wowchemy&#39;s [_Slides_](https://wowchemy.com/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://wowchemy.com/docs/writing-markdown-latex/).
-
-Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page.
---&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Properties of stellar populations and white dwarfs in a semi-analytic Milky Way disk model based on Gaia DR3</title>
-      <link>https://a-vani.github.io/project/jjmodel/</link>
-      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/jjmodel/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-This thesis presents the extension of the semi-analytic chemo-dynamic model of the Milky Way disc, known as the JJ model, first presented by Just and Jahreiß (2010), to include white dwarfs (WD). Initially, we test the calibrated JJ model and found minor inconsistencies (about 0.2 % and 2.2 % in 25 pc and 60 pc volume) in total star counts based on Gaia EDR3 data, implying excellent data-to-model consistency. Subsequently, this work incorporated WD synthesis into the model using BaSTI DA and DB (carbon-oxygen core) isochrones and an initial-final mass relation. This work also modeled stellar lifetimes and derived an analytical fit for the DA/DB ratio as a function of effective temperature. Additionally, we established a volume-complete sample of Gaia DR3 WDs within 60 pc and found that the updated JJ model over-predicts WDs by 52%, potentially attributed to assumptions regarding the initial mass function (IMF) and star formation rate (SFR). Exploring this dependency on the IMF, we derived a test IMF; however, a thorough MCMC-based model calibration is warranted. This extended JJ model serves as a valuable tool for studying Milky Way evolution, IMF, SFR, and WD kinematics.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Properties of White Dwarfs in the JJ model based on Gaia (E)DR3</title>
-      <link>https://a-vani.github.io/talk/properties-of-white-dwarfs-in-the-jj-model-based-on-gaia-edr3/</link>
-      <pubDate>Mon, 15 Aug 2022 10:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/talk/properties-of-white-dwarfs-in-the-jj-model-based-on-gaia-edr3/</guid>
-      <description>&lt;!--
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Slides can be added in a few ways:
-
-- **Create** slides using Wowchemy&#39;s [_Slides_](https://wowchemy.com/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://wowchemy.com/docs/writing-markdown-latex/).
-
-Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page.
---&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Investigation of two M-dwarf binaries</title>
-      <link>https://a-vani.github.io/project/mdwarfbin/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/mdwarfbin/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-This project involved the investigation of two binary systems with the potential to form a quadruple system. Despite initial intrigue, the exploration faced challenges due to the systems&#39; high orbital periods and limited data availability, resulting in inconclusive findings. &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://a-vani.github.io/post/getting-started/</link>
-      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/post/getting-started/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
-&lt;li&gt;The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong&gt;no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong&gt; and having &lt;strong&gt;flexibility to later add even deeper personalization with HTML and CSS&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/main/starters/academic/preview.png&#34; alt=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;👉 &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;a href=&#34;https://wowchemy.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;Wowchemy community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/wowchemy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@wowchemy&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%23MadeWithWowchemy&amp;amp;src=typed_query&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithWowchemy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Wowchemy&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating Wowchemy?&lt;/strong&gt; View the &lt;a href=&#34;https://wowchemy.com/docs/hugo-tutorials/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Tutorial&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
-&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
-&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomsponsor&#34;&gt;&lt;a href=&#34;https://wowchemy.com/sponsor/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://wowchemy.com/sponsor/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/wowchemy/hugo-academic-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CLI&lt;/a&gt;:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://wowchemy.com/user-stories/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://wowchemy.com/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://wowchemy.com/docs/import/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://wowchemy.com/docs/install-locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://wowchemy.com/docs/customization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 34+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Wowchemy and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/customization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Deep Learning in Astronomy</title>
-      <link>https://a-vani.github.io/project/dlastro/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/dlastro/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-&lt;p&gt;This self-guided project aimed to delve into the fundamentals of deep learning techniques using TensorFlow. A simple neural network was devised to classify galaxies as either spiral or elliptical based on photometric data or images extracted from the Sloan Digital Sky Survey (SDSS). The dataset, provided by Ashish Mahabal during the 7BISS (2020) summer school, facilitated hands-on exploration and learning in the field of astrophysical data analysis. The code can be found on &lt;a href=&#34;https://github.com/A-Vani/Deep_Learning_Astronomy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Quantum Key Distribution- BB84 &amp; E91 Protocol</title>
-      <link>https://a-vani.github.io/project/qkd/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/qkd/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-&lt;p&gt;This project involved the practical demonstration of the BB84 and E91 quantum key distribution (QKD) protocols using IBM&amp;rsquo;s quantum computer. Through hands-on experimentation, we explored the functionality and performance of these protocols, both with and without repeaters, to simulate the operation of a quantum network. By implementing these protocols on real quantum hardware, we gained valuable insights into the practical challenges and capabilities of quantum cryptography. The code can be found on &lt;a href=&#34;https://github.com/A-Vani/IBMQ_QKD&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Spectral and timing study of LMXB system 4U 1702-429 using Astrosats X-ray data</title>
-      <link>https://a-vani.github.io/project/1702/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/1702/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-&lt;p&gt;This project focuses on conducting a spectral and timing analysis of the X-ray emission originating from the Low Mass X-Ray Binary (LMXB) system 4U 1702-429. Leveraging data obtained from ASTROSAT&amp;rsquo;s LAXPC and SXT instruments, the investigation aims to shed light on the characteristics of a thermonuclear (Type-I) X-ray burst.&lt;/p&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Writing technical content in Markdown</title>
-      <link>https://a-vani.github.io/post/writing-technical-content/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/post/writing-technical-content/</guid>
-      <description>&lt;p&gt;Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p&gt;
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
-&lt;p&gt;Wowchemy supports a Markdown extension for highlighting code syntax. You can customize the styles under the &lt;code&gt;syntax_highlighter&lt;/code&gt; option in your &lt;code&gt;config/_default/params.yaml&lt;/code&gt; file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```python
-import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;read_csv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;data.csv&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;mindmaps&#34;&gt;Mindmaps&lt;/h3&gt;
-&lt;p&gt;Wowchemy supports a Markdown extension for mindmaps.&lt;/p&gt;
-&lt;p&gt;Simply insert a Markdown &lt;code&gt;markmap&lt;/code&gt; code block and optionally set the height of the mindmap as shown in the example below.&lt;/p&gt;
-&lt;p&gt;A simple mindmap defined as a Markdown list:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;
-&lt;code&gt;
-```markmap {height=&#34;200px&#34;}
-- Hugo Modules
-  - wowchemy
-  - wowchemy-plugins-netlify
-  - wowchemy-plugins-netlify-cms
-  - wowchemy-plugins-reveal
-```
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 200px;&#34;&gt;
-
-&lt;pre&gt;- Hugo Modules
-  - wowchemy
-  - wowchemy-plugins-netlify
-  - wowchemy-plugins-netlify-cms
-  - wowchemy-plugins-reveal&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;A more advanced mindmap with formatting, code blocks, and math:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;
-&lt;code&gt;
-```markmap
-- Mindmaps
-  - Links
-    - [Wowchemy Docs](https://wowchemy.com/docs/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/wowchemy/wowchemy-hugo-themes)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log(&#39;hello&#39;);
-      console.log(&#39;code block&#39;);
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-```
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
-
-&lt;pre&gt;- Mindmaps
-  - Links
-    - [Wowchemy Docs](https://wowchemy.com/docs/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/wowchemy/wowchemy-hugo-themes)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log(&#39;hello&#39;);
-      console.log(&#39;code block&#39;);
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;charts&#34;&gt;Charts&lt;/h3&gt;
-&lt;p&gt;Wowchemy supports the popular &lt;a href=&#34;https://plot.ly/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly&lt;/a&gt; format for interactive charts.&lt;/p&gt;
-&lt;p&gt;Save your Plotly JSON in your page folder, for example &lt;code&gt;line-chart.json&lt;/code&gt;, and then add the &lt;code&gt;{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code&gt; shortcode where you would like the chart to appear.&lt;/p&gt;
-&lt;p&gt;Demo:&lt;/p&gt;
-
-
-
-
-&lt;div id=&#34;chart-614358972&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        return;
-      }
-      clearInterval( a );
-
-      Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-614358972&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
-&lt;/script&gt;
-
-&lt;p&gt;You might also find the &lt;a href=&#34;http://plotly-json-editor.getforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly JSON Editor&lt;/a&gt; useful.&lt;/p&gt;
-&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
-&lt;p&gt;Wowchemy supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.yaml&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;{{&amp;lt; math &amp;gt;}}$...${{&amp;lt; /math &amp;gt;}}&lt;/code&gt; or &lt;code&gt;{{&amp;lt; math &amp;gt;}}$$...$${{&amp;lt; /math &amp;gt;}}&lt;/code&gt;, respectively. (We wrap the LaTeX math in the Wowchemy &lt;em&gt;math&lt;/em&gt; shortcode to prevent Hugo rendering our math as Markdown. The &lt;em&gt;math&lt;/em&gt; shortcode is new in v5.5-dev.)&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;$$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\gamma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; | &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^T &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; |}{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; /math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-
-
-
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;{{&amp;lt; math &amp;gt;}}$\nabla F(\mathbf{x}_{n})${{&amp;lt; /math &amp;gt;}}&lt;/code&gt; renders as 
-
-$\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the math linebreak (&lt;code&gt;\\&lt;/code&gt;):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;$$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;k;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;, &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; /math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-
-
-
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} &amp; \text{if }k=1, \\
-1-p_{0}^{*} &amp; \text{if }k=0.\end{cases}
-$$
-
-
-&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
-&lt;p&gt;Wowchemy supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
-&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;graph TD
-A[Hard] --&gt;|Text| B(Round)
-B --&gt; C{Decision}
-C --&gt;|One| D[Result 1]
-C --&gt;|Two| E[Result 2]
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
-Alice-&gt;&gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&gt;&gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&gt;&gt;Alice: Great!
-John-&gt;&gt;Bob: How about you?
-Bob--&gt;&gt;John: Jolly good!
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &amp;lt;--&amp;gt; C2: Cool label
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;classDiagram
-Class01 &lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --&gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &lt;--&gt; C2: Cool label
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;stateDiagram
-[*] --&gt; Still
-Still --&gt; [*]
-Still --&gt; Moving
-Moving --&gt; Still
-Moving --&gt; Crash
-Crash --&gt; [*]
-&lt;/div&gt;
-&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
-&lt;p&gt;You can even write your todo lists in Markdown too:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; Write math example
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; Write diagram example
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; Do something else
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write math example
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something else&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
-&lt;p&gt;Save your spreadsheet as a CSV file in your page&amp;rsquo;s folder and then render it by adding the &lt;em&gt;Table&lt;/em&gt; shortcode to your page:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;results.csv&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;caption&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Table 1: My results&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-&lt;table class=&#34;table&#34;&gt;
-  
-    
-    
-    &lt;tr&gt;  &lt;th&gt;customer_id&lt;/th&gt;  &lt;th&gt;score&lt;/th&gt;  &lt;/tr&gt;
-  
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34;&gt;1&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34;&gt;0&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34;&gt;2&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;text&#34;&gt;0.5&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34;&gt;3&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34;&gt;1&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-  
-    &lt;caption&gt;Table 1: My results&lt;/caption&gt;
-  
-&lt;/table&gt;
-
-&lt;h3 id=&#34;callouts&#34;&gt;Callouts&lt;/h3&gt;
-&lt;p&gt;Academic supports a &lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/#callouts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcode for callouts&lt;/a&gt;, also referred to as &lt;em&gt;asides&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% callout note %}} ... {{% /callout %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% callout note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /callout %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;spoilers&#34;&gt;Spoilers&lt;/h3&gt;
-&lt;p&gt;Add a spoiler to a page to reveal text, such as an answer to a question, after a button is clicked.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;spoiler&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Click to view the spoiler&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;You found me!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;spoiler&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
-  &lt;summary&gt;Click to view the spoiler&lt;/summary&gt;
-  &lt;p&gt;You found me!&lt;/p&gt;
-&lt;/details&gt;
-&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
-&lt;p&gt;Academic enables you to use a wide range of &lt;a href=&#34;https://wowchemy.com/docs/getting-started/page-builder/#icons&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;icons from &lt;em&gt;Font Awesome&lt;/em&gt; and &lt;em&gt;Academicons&lt;/em&gt;&lt;/a&gt; in addition to &lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/#emojis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;emojis&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here are some examples using the &lt;code&gt;icon&lt;/code&gt; shortcode to render icons:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;icon&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;terminal&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;pack&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;fas&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}} Terminal  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;icon&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;pack&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;fab&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}} Python  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;icon&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;r-project&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;pack&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;fab&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}} R
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-terminal  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Terminal&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-python  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Python&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-r-project  pr-1 fa-fw&#34;&gt;&lt;/i&gt; R&lt;/p&gt;
-&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Polarimetry</title>
-      <link>https://a-vani.github.io/project/polarimetry/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/polarimetry/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-&lt;p&gt;This project encompasses a comprehensive literature survey aimed at gaining insights into the principles and methodologies of polarimetry. It explores the Jones and Stokes formalism and dives into material interactions of light. Additionally, the project included a hands-on laboratory component to facilitate practical understanding. This was concluded with a detailed presentation summarising the findings and experiences.&lt;/p&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CPT synthesis of layered BiOI nanodiscs and its photocatalytic applications</title>
-      <link>https://a-vani.github.io/project/cpt/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/cpt/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-Bismuth Oxyiodide (BiOI) is a promising photocatalytic material with exceptional electrical and optical properties, suitable for decomposing pollutants in aqueous systems. This project focuses on the synthesis of BiOI nanodiscs via the co-precipitation method, followed by thorough characterisation using X-ray diffraction and scanning electron microscopy techniques to confirm the formation of nanostructures. Subsequently, the photocatalytic properties of the synthesised material were investigated. This project, led by S. Patil, served as the foundation for his bachelor thesis.
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>https://a-vani.github.io/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/post/jupyter/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;IPython.core.display&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Welcome to Academic!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jupyter lab index.ipynb
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: My post&amp;#39;s title
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date: 2019-09-01
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# Put any other Academic metadata here...
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit the metadata of your post, using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
-      <link>https://a-vani.github.io/slides/example/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/slides/example/</guid>
-      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://wowchemy.com/docs/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://revealjs.com/pdf-export/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code block:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-&lt;p&gt;Block math:&lt;/p&gt;
-&lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} One {{% /fragment %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} **Two** {{% /fragment %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% fragment %}} Three {{% /fragment %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  &lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  Three
-&lt;/span&gt;
-&lt;hr&gt;
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% speaker_note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{% /speaker_note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/media/boards.jpg&#34;
-  &gt;
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Photometric Calibration of UVIT</title>
-      <link>https://a-vani.github.io/project/uvit/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/project/uvit/</guid>
-      <description>&lt;p align=&#34;justify&#34;&gt;
-&lt;p&gt;Photometric calibrations are essential for accurately determining the photometric magnitudes of celestial objects. This thesis focuses on the calibration procedures for the Ultraviolet Imaging Telescope (UVIT) onboard ASTROSAT. The aim is to obtain precise estimates of the photon counts per second (C/S) in UVIT filters for calibration sources, including the white dwarf HZ4 and the open cluster NGC188. The procedures involve correcting for instrumental effects such as saturation and spatial variation of sensitivity. Emphasis is placed on evaluating the effectiveness of flat field correction techniques in minimizing spatial variations, ultimately leading to improved photometry.&lt;/p&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example conference paper</title>
-      <link>https://a-vani.github.io/publication/conference-paper_test/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://a-vani.github.io/publication/conference-paper_test/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -1347,6 +389,267 @@ $$&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://a-vani.github.io/admin/config.yml</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Galaxy Evolution &amp; Quenching</title>
+      <link>https://a-vani.github.io/research-interests/galaxy-evolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/galaxy-evolution/</guid>
+      <description>&lt;p&gt;Galaxies evolve through the interplay of gas accretion, star formation, mergers, structural transformation, and feedback. Together, these processes determine how galaxies build their stellar mass, regulate their gas supply, and transition from actively star-forming to quiescent systems.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-investigate&#34;&gt;What I investigate&lt;/h2&gt;
+&lt;p&gt;My research follows galaxy evolution from the nearby Universe to the first billion years of cosmic history, with a particular focus on how massive galaxies assemble, develop compact structures, and eventually quench their star formation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2025&lt;/a&gt; tested three generations of &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt; against observations from z=0 to z≈10, examining galaxy abundances, star-formation rates, sizes, and stellar-mass surface densities. The models reproduce many global trends, but struggle to produce enough massive, compact quenched galaxies at high redshift.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt; builds on these results by developing and testing an updated &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt; framework within Gadget-4, with revised physical prescriptions aimed at improving the modelling of early galaxy growth and quenching. The model introduces surface-density-dependent star formation and stellar feedback, dissipative galaxy mergers, and gas- and stellar-based disc instabilities, extending the framework to remain consistent with key observational constraints out to z≈14. The work also develops new calibration methods to efficiently constrain the expanded model.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-l-galaxies-framework-physical-processes-shaping-galaxy-formation-and-evolution-based-on-vani-et-al-2026httpsuiadsabsharvardeduabsarxiv260912060&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Schematic of the L-Galaxies galaxy formation and evolution model.&#34; srcset=&#34;
+               /media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp 400w,
+               /media/LGalSchematic_hu_179958cf1e490df2.webp 760w,
+               /media/LGalSchematic_hu_b1f9f99e3ad41d6a.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;595&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The L-Galaxies framework: physical processes shaping galaxy formation and evolution. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt;.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;my-approach&#34;&gt;My approach&lt;/h2&gt;
+&lt;p&gt;I develop and test physically motivated prescriptions within &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt;, combining large cosmological simulations with observational constraints from HST, JWST, and ALMA, as well as current and upcoming large surveys including Euclid and Roman.&lt;/p&gt;
+&lt;p&gt;The modelling spans star formation and feedback, bulge growth, mergers and disc instabilities, galaxy sizes, and black-hole growth. Model parameters are constrained using statistical inference and large-scale calibration, allowing the resulting galaxy populations to be tested against stellar mass functions, quenched fractions, luminosity functions, galaxy sizes, surface densities, and other scaling relations.&lt;/p&gt;
+&lt;h2 id=&#34;interactive-galaxy-cluster-formation-visualisation&#34;&gt;Interactive galaxy cluster formation visualisation&lt;/h2&gt;
+&lt;figure&gt;
+&lt;iframe src=&#34;https://a-vani.github.io/visualizations/halo.html&#34; title=&#34;Interactive halo visualization&#34; loading=&#34;lazy&#34; style=&#34;display:block; width:100%; height:560px; border:0;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Explore the formation of a massive galaxy cluster within a 20 Mpc region across cosmic time. Rotate and zoom through the environment, move through different epochs, and compare star-forming and quenched galaxies. Marker size traces galaxy stellar mass, while hovering reveals additional galaxy properties. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2025&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://a-vani.github.io/visualizations/halo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Open visualization in a new tab&lt;/a&gt;&lt;/p&gt;
+
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/#research-interests&#34;&gt;&amp;larr; Back to Research Interests&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/early-universe/&#34;&gt;The Early Universe &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local Stellar Populations &amp; the Milky Way</title>
+      <link>https://a-vani.github.io/research-interests/local-stellar-populations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/local-stellar-populations/</guid>
+      <description>&lt;p&gt;The solar neighbourhood provides one of the most detailed laboratories for Galactic archaeology. Nearby stars preserve information about the formation, structure, and star-formation history of the Milky Way, while precise astrometry and photometry from Gaia make it possible to connect these populations directly to physical models of our Galaxy.&lt;/p&gt;
+&lt;p&gt;My interest in stellar populations and Galactic evolution grew out of my research at Heidelberg University, combining population synthesis, nearby-star catalogues, and white-dwarf studies to investigate the history of the Milky Way.&lt;/p&gt;
+&lt;h2 id=&#34;population-synthesis-and-galactic-archaeology&#34;&gt;Population synthesis and Galactic archaeology&lt;/h2&gt;
+&lt;p&gt;During my Master&amp;rsquo;s research, I worked on the JJ model, a semi-analytic chemo-dynamical model of the Galactic disc. This work extended the model&amp;rsquo;s population synthesis to white dwarfs and compared the predicted local population with Gaia observations.&lt;/p&gt;
+&lt;p&gt;This research has since developed into CALOMERA (Sysoliatina &amp;amp; Vani 2026), a successor to the JJ framework that extends population synthesis across a broader range of stellar populations and evolutionary stages, including main-sequence stars, white dwarfs, and brown dwarfs. By combining these complementary populations, CALOMERA aims to place stronger constraints on the star-formation and evolutionary history of the Milky Way. The framework can also be used to estimate contamination by brown dwarfs in deep JWST fields.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; style=&#34;max-width: 480px&#34;&gt;&lt;img alt=&#34;Illustration of the CALOMERA Milky Way population-synthesis framework.&#34; srcset=&#34;
+               /media/Calomera_website_hu_4606a0ad806f112.webp 400w,
+               /media/Calomera_website_hu_cc8a43f93d367bcd.webp 760w,
+               /media/Calomera_website_hu_42be12c018aa9160.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/Calomera_website_hu_4606a0ad806f112.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;340&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;the-nearby-stellar-census&#34;&gt;The nearby stellar census&lt;/h2&gt;
+&lt;p&gt;The Catalogue of Nearby Stars provides a complementary observational view of the solar neighbourhood. &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2023&lt;/a&gt; in &lt;a href=&#34;https://dc.g-vo.org/CNS5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CNS5&lt;/a&gt; updated the census of stars and brown dwarfs within 25 pc using Gaia and complementary data, with improved completeness, validation, and source characterisation.&lt;/p&gt;
+&lt;p&gt;Follow-up work, &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2024A%26A...683A..33G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2024&lt;/a&gt;,  identified previously missed nearby white dwarfs and improved the local white-dwarf census. The ongoing sixth iteration, Golovin et al. 2026 i.e. CNS6, extends the catalogue further by incorporating more comprehensive physical properties and updated characterisation of nearby objects.&lt;/p&gt;
+&lt;h2 id=&#34;explore-the-solar-neighbourhood&#34;&gt;Explore the solar neighbourhood&lt;/h2&gt;
+&lt;figure style=&#34;width:100%; max-width:680px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;iframe class=&#34;solar-neighbourhood-embed&#34; src=&#34;https://a-vani.github.io/media/solar_neighbourhood.html&#34; title=&#34;Interactive CNS5 solar neighbourhood explorer&#34; loading=&#34;lazy&#34; style=&#34;display:block; width:100%; height:800px; border:0; border-radius:12px;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Interactive explorer of our stellar neighbourhood based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..19G/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Golovin et al. 2023&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;For the best experience, &lt;a href=&#34;https://a-vani.github.io/media/solar_neighbourhood.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;open the explorer in full view in a new tab&lt;/a&gt;.&lt;/p&gt;&lt;script src=&#34;https://a-vani.github.io/js/solar-neighbourhood-embed.min.bac5692570245300224efba605392bceef82c9197642a9bcd8e11b800bc82b76.js&#34; integrity=&#34;sha256-usVpJXAkUwAiTvumBTkrzu&amp;#43;CyRl2Qqm82OEbgAvIK3Y=&#34; defer&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;connecting-models-and-observations&#34;&gt;Connecting models and observations&lt;/h2&gt;
+&lt;p&gt;Together, population synthesis and the nearby stellar census provide complementary ways to reconstruct the Milky Way&amp;rsquo;s history. The models connect assumptions about star formation, stellar evolution, and Galactic structure to observable stellar populations, while volume-limited catalogues provide the data needed to test those predictions.&lt;/p&gt;
+&lt;p&gt;This combination provides a framework for Galactic archaeology across main-sequence stars, white dwarfs, brown dwarfs, and the local stellar population as a whole.&lt;/p&gt;
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;&amp;larr; Simulations &amp; ML&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/#research-interests&#34;&gt;Back to Research Interests &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Numerical Simulations &amp; Machine Learning</title>
+      <link>https://a-vani.github.io/research-interests/numerical-simulations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/numerical-simulations/</guid>
+      <description>&lt;p&gt;Numerical simulations provide the backbone for modelling how cosmic structure grows and how galaxies evolve within it. My work uses large cosmological dark-matter simulations, including the Millennium and MillenniumTNG simulation suites, together with the &lt;a href=&#34;https://wwwmpa.mpa-garching.mpg.de/gadget4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gadget-4&lt;/a&gt; framework to connect the evolving dark-matter distribution with physically motivated models of galaxy formation.&lt;/p&gt;
+&lt;h2 id=&#34;my-approach&#34;&gt;My approach&lt;/h2&gt;
+&lt;p&gt;I combine large-scale N-body simulations with semi-analytic models of galaxy formation. The dark-matter simulations follow the growth of haloes and large-scale structure, while &lt;a href=&#34;https://a-vani.github.io/research-interests/galaxy-evolution/&#34;&gt;L-Galaxies&lt;/a&gt; models the baryonic processes associated with galaxy formation and evolution along the resulting merger trees.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-l-galaxies-framework-physical-processes-shaping-galaxy-formation-and-evolution-based-on-vani-et-al-2026httpsuiadsabsharvardeduabsarxiv260912060&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Schematic of the L-Galaxies galaxy formation and evolution model.&#34; srcset=&#34;
+               /media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp 400w,
+               /media/LGalSchematic_hu_179958cf1e490df2.webp 760w,
+               /media/LGalSchematic_hu_b1f9f99e3ad41d6a.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/LGalSchematic_hu_b53a2f2ed5a5fe8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;595&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The L-Galaxies framework: physical processes shaping galaxy formation and evolution. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt;.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;My work focuses on developing, implementing, and testing self-consistent physical prescriptions within the Gadget-4 + L-Galaxies framework. These include star formation and stellar feedback, mergers, disc instabilities, black-hole growth, and galaxy quenching.&lt;/p&gt;
+&lt;p&gt;Scientific and high-performance computing are central to this work. I use Python and C/C++ to develop and analyse simulation workflows, process multi-dimensional and multi-terabyte datasets, and explore galaxy populations across large parameter spaces.&lt;/p&gt;
+&lt;p&gt;The same modelling philosophy also extends to stellar-population work through CALOMERA, a semi-analytic chemo-dynamical Milky Way model for population synthesis and Galactic evolution studies. More details are available on the &lt;a href=&#34;https://a-vani.github.io/research-interests/local-stellar-populations/&#34;&gt;Local Stellar Populations &amp;amp; the Milky Way&lt;/a&gt; page.&lt;/p&gt;
+&lt;h2 id=&#34;statistical-inference-and-machine-learning&#34;&gt;Statistical inference and machine learning&lt;/h2&gt;
+&lt;p&gt;A major part of the modelling process is identifying which combinations of physical parameters are consistent with observations. I use statistical inference, MCMC-based calibration, and machine-learning approaches to constrain model parameters and explore parameter space efficiently.&lt;/p&gt;
+&lt;p&gt;Deep-learning surrogate models can emulate computationally expensive model outputs, accelerating calibration and enabling a much broader exploration of physical parameter space than would be feasible with direct model evaluations alone.&lt;/p&gt;
+&lt;h2 id=&#34;connecting-models-and-observations&#34;&gt;Connecting models and observations&lt;/h2&gt;
+&lt;p&gt;The resulting predictions are tested against observational constraints including galaxy abundances, star-formation rates, quenched fractions, luminosity functions, galaxy sizes, and structural properties.&lt;/p&gt;
+&lt;p&gt;This combination of physical modelling, large-scale N-body simulations, scientific computing, statistical inference, and machine learning provides a framework for identifying where current models succeed, where they fail, and which physical ingredients require further development.&lt;/p&gt;
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/early-universe/&#34;&gt;&amp;larr; The Early Universe&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/local-stellar-populations/&#34;&gt;Population Synthesis &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Early Universe</title>
+      <link>https://a-vani.github.io/research-interests/early-universe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-vani.github.io/research-interests/early-universe/</guid>
+      <description>&lt;p&gt;The early Universe provides one of the most demanding tests of galaxy-formation models. Galaxies had only a short time to assemble their stellar mass, build structure, and regulate their star formation, making their observed properties especially sensitive to the underlying physical processes.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-jades-gs-z14-0httpsenwikipediaorgwikijades-gs-z14-0-one-of-the-most-distant-galaxies-discovered-credit-nasa&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; style=&#34;max-width: 50%&#34;&gt;&lt;img alt=&#34;NASA image of the distant galaxy JADES-GS-z14-0.&#34; srcset=&#34;
+               /media/JADES-GS-z14-0_NASA_hu_b2a7aff1ee5ebf19.webp 400w,
+               /media/JADES-GS-z14-0_NASA_hu_e4f420fd6f222574.webp 760w,
+               /media/JADES-GS-z14-0_NASA_hu_5737d08ba21e66a3.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/JADES-GS-z14-0_NASA_hu_b2a7aff1ee5ebf19.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;742&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;a href=&#34;https://en.wikipedia.org/wiki/JADES-GS-z14-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JADES-GS-z14-0&lt;/a&gt;, one of the most distant galaxies discovered. Credit: NASA.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;what-i-investigate&#34;&gt;What I investigate&lt;/h2&gt;
+&lt;p&gt;My research explores galaxy growth and quenching at high and ultra-high redshift, with a particular focus on the first billion years of cosmic history. Key questions include how galaxies assemble stellar mass so rapidly, what regulates their star formation, and how some systems become compact or quiescent at such early times.&lt;/p&gt;
+&lt;p&gt;A central goal is to test whether physically motivated galaxy-formation models can reproduce the rapidly evolving populations revealed by JWST and other deep surveys, while remaining consistent with galaxy evolution at later epochs.&lt;/p&gt;
+&lt;h2 id=&#34;what-we-find&#34;&gt;What we find&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/2025MNRAS.536..777V/abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2025&lt;/a&gt; showed that earlier L-Galaxies models reproduce many global galaxy trends out to z ≈10, but exhibit three key shortcomings at high redshift: they underpredict the abundance of massive galaxies, produce too few massive quenched galaxies, and predict quenched systems that are too extended.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt; substantially reduces these tensions. The updated model increases the abundance of massive and UV-bright galaxies at z ≥ 9, produces significantly more massive quenched systems at z ≈ 3–8, and forms compact galaxies consistent with observed UV sizes at z ≈ 10–13.&lt;/p&gt;
+&lt;h2 id=&#34;my-approach&#34;&gt;My approach&lt;/h2&gt;
+&lt;p&gt;Within &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;L-Galaxies&lt;/a&gt;, I develop and test models in which star formation and stellar feedback depend on the local gas surface density. The framework also includes dissipative mergers and gas- and stellar-disc instabilities, allowing rapid early growth and structural evolution to be followed self-consistently.&lt;/p&gt;
+&lt;p&gt;Model predictions are compared with high-redshift observations from JWST, including ultraviolet luminosity functions, stellar mass functions, star-formation rates, galaxy sizes, and quenched galaxy abundances.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-predicted-ultraviolet-luminosity-function-at-z--11-compared-with-observational-constraints-based-on-vani-et-al-2026httpsuiadsabsharvardeduabsarxiv260912060&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; style=&#34;max-width: 50%&#34;&gt;&lt;img alt=&#34;High-redshift ultraviolet luminosity function at approximately z = 11. Based on [Vani et al. 2026](https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060).&#34; srcset=&#34;
+               /media/UVLF_G411.0_hu_555215f2dfaaddfb.webp 400w,
+               /media/UVLF_G411.0_hu_320a3abe3e0e92df.webp 760w,
+               /media/UVLF_G411.0_hu_1f58ca47eaecf0ae.webp 1200w&#34;
+               src=&#34;https://a-vani.github.io/media/UVLF_G411.0_hu_555215f2dfaaddfb.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;605&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Predicted ultraviolet luminosity function at z ≈ 11 compared with observational constraints. Based on &lt;a href=&#34;https://ui.adsabs.harvard.edu/abs/arXiv:2609.12060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vani et al. 2026&lt;/a&gt;.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;nav aria-label=&#34;Research page navigation&#34; style=&#34;display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem;&#34;&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/galaxy-evolution/&#34;&gt;&amp;larr; Galaxy Evolution&lt;/a&gt;
+  &lt;a href=&#34;https://a-vani.github.io/research-interests/numerical-simulations/&#34;&gt;Simulations &amp; ML &amp;rarr;&lt;/a&gt;
+&lt;/nav&gt;
+</description>
     </item>
     
   </channel>
